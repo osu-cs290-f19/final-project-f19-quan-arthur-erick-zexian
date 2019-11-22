@@ -125,6 +125,23 @@ nav .nav-elements ul {
 }
 
 /* Page 7 */
-main {
-  align-items: center;
+main.content-page7 {
+  display: flex;
+  align-self: center;
+  margin: 10%;
+  margin-top: 50px;
+  width: 50%
+}
+
+div.left-side-container {
+
+}
+
+.image-container img{
+  max-width: 480px;
+  max-height: 360px;
+}
+
+div.right-side-container {
+
 }
