@@ -130,10 +130,6 @@ input, select, textarea{
   color: #50a3e3;
 }
 
-.main{
-  margin-left: 275px;
-  margin-right: 275px;
-}
 
 
 .course-name{
@@ -142,24 +138,31 @@ input, select, textarea{
   font-weight: 100;
 }
 
+
 .create-post-container{
-  display: flex; 
+  /* display: flex; 
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   align-items: left;
+  align-items: right;
   padding: 10px; 
-  /* margin-left: auto; */
+  margin-left: auto; */
+/* background-color: #FFDC00; */
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 35px;
+  padding: 10px;
+  margin: 0 auto;
 }
 
-/* .create-post-element {
-  justify-content: left;
-} */
 
 .create-input {
   font-size: 14px;
   width: 500px;
-  height: 35px;
+  height: 29px;
   padding: 2px;
+  margin: 0 auto;
   border: 1px solid #9ed2fd;
 }
 
@@ -169,6 +172,9 @@ input, select, textarea{
   font-size: small;
   color: white;
   padding: 10px;
+  width: max-content;
+  /* padding-top: 10px; */
+  /* margin: 10px; */
 }
 
 .create-image-box{
@@ -186,20 +192,6 @@ input, select, textarea{
   padding: 5px;
 }
 
-.action-button{
-  text-transform: uppercase;
-  font-size: smaller;
-  border: none;
-  padding: 10px;
-  padding-left: 13px;
-  padding-right: 13px;
-  border-radius: 3px;
-  justify-content: center;
-}
-
-.action-button:hover{
-  cursor: pointer;
-}
 
 #create-back{
   color: white;

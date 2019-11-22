@@ -8,8 +8,9 @@
 
 /* Variables */
 
-const NUM_FIELDS = 9;
+const NUM_FIELDS = 10;
 const OPTIONAL_IDX = 6;
+const IPT_CLASS = 'create-input';
 
 var postInfo;
 var postInfoArr = new Array(NUM_FIELDS);
@@ -20,7 +21,7 @@ var postInfoArr = new Array(NUM_FIELDS);
 function allFields(){
     for(var i = 0; i < NUM_FIELDS; i++){
         if(i != OPTIONAL_IDX){
-            if(document.getElementsByClassName('create-input')[i].value.toString() == ""){
+            if(document.getElementsByClassName(IPT_CLASS)[i].value.toString() == ""){
                 return false;
             }
         }
@@ -30,11 +31,11 @@ function allFields(){
 
 
 function storeInput(){
-    postInfo = document.getElementsByClassName('create-input');
+    postInfo = document.getElementsByClassName(IPT_CLASS);
     for(var i = 0; i < NUM_FIELDS; i++){
         postInfoArr[i] = postInfo[i];
     }
-    // console.log(postInfoArr);
+    console.log(postInfoArr);
     console.log('== Input stored in postInfoArr');
     return;
 }
