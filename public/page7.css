@@ -153,11 +153,6 @@ div.book-title-container {
   justify-content: space-between;
 }
 
-p.book-title-text {
-  font-weight: bold;
-  font-size: 40px;
-}
-
 .book-price {
   padding: 10px;
   padding-left: 0px;
