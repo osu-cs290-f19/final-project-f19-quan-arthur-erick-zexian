@@ -36,7 +36,7 @@ app.get('/search/:course', async (req, res) => {
   const courseNumber = course.substr(inputIndex, 3);
 
   results = await getTextbook(major, courseNumber);
-  fs.writeFile('/data', results, err => {
+  fs.appendFile('textbookData.json', JSON.stringify(results, null, 2), err => {
     if (err) {
       console.log(err);
       return;
