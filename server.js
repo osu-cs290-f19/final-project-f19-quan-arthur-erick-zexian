@@ -1,6 +1,6 @@
 const axios = require('axios');
 const express = require('express');
-
+const fs = require('fs');
 const exphbs = require('express-handlebars');
 // const qs = require("qs");
 // const getTermPublicKey = 'TnuOGEueZmOX36CyTXeyXwmYv0AwRDnR';
@@ -15,6 +15,7 @@ const params = new URLSearchParams();
 const bodyParser = require('body-parser');
 const app = express();
 let results;
+let textbookData = [];
 
 app.engine(
   'handlebars',
@@ -35,6 +36,13 @@ app.get('/search/:course', async (req, res) => {
   const courseNumber = course.substr(inputIndex, 3);
 
   results = await getTextbook(major, courseNumber);
+  fs.writeFile('/data', results, err => {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    console.log('File has been created');
+  })
   res.status(200);
   res.render('home', {
     results: results
