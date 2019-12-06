@@ -136,24 +136,18 @@ input, select, textarea{
   color: #2699fb;
   font-size: x-large;
   font-weight: 100;
+
 }
 
 
 .create-post-container{
-  /* display: flex; 
-  flex-direction: row;
   justify-content: center;
-  align-items: left;
-  align-items: right;
-  padding: 10px; 
-  margin-left: auto; */
-/* background-color: #FFDC00; */
   display: flex;
   flex-direction: row;
-  width: 500px;
   height: 35px;
   padding: 10px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -164,6 +158,15 @@ input, select, textarea{
   padding: 2px;
   margin: 0 auto;
   border: 1px solid #9ed2fd;
+} 
+
+#isbn-text{
+  display: flex;
+  color:grey;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: small;
+  padding: 10px;
 }
 
 .create-input-label{
@@ -172,9 +175,7 @@ input, select, textarea{
   font-size: small;
   color: white;
   padding: 10px;
-  width: max-content;
-  /* padding-top: 10px; */
-  /* margin: 10px; */
+  width: 100px;
 }
 
 .create-image-box{
@@ -212,4 +213,12 @@ input, select, textarea{
 #create-accept{
   color: white;
   background-color:#2699fb;
+}
+
+#isbn-text{
+  height: 13px;
+}
+
+#create-condition{
+  height: 34px;
 }
