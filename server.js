@@ -2,6 +2,7 @@ const axios = require('axios');
 const express = require('express');
 const fs = require('fs');
 const exphbs = require('express-handlebars');
+const path = require('path');
 // const qs = require("qs");
 // const getTermPublicKey = 'TnuOGEueZmOX36CyTXeyXwmYv0AwRDnR';
 // const getTermSecretKey = 'pLLmhDmvLtWmvKl6';
@@ -22,12 +23,17 @@ app.engine(
   exphbs({
     defaultLayout: 'main'
   })
-  );
-  app.set('view engine', 'handlebars');
-  
-  app.use(bodyParser.json());
-  
-  app.use(express.static('public'));
+);
+app.set('view engine', 'handlebars');
+
+app.use(bodyParser.json());
+
+app.use(express.static('public'));
+
+app.get('/create_post/:isbn', (req, res) => {
+  const isbn = req.params.isbn;
+  res.sendFile(path.join(__dirname + '/public/create_post.html'));
+});
 
 app.get('/search/:course', async (req, res) => {
   const course = req.params.course;
@@ -36,13 +42,13 @@ app.get('/search/:course', async (req, res) => {
   const courseNumber = course.substr(inputIndex, 3);
 
   results = await getTextbook(major, courseNumber);
-  fs.appendFile('textbookData.json', JSON.stringify(results, null, 2), err => {
-    if (err) {
-      console.log(err);
-      return;
-    }
-    console.log('File has been created');
-  })
+  // fs.appendFile('textbookData.json', JSON.stringify(results, null, 2), err => {
+  //   if (err) {
+  //     console.log(err);
+  //     return;
+  //   }
+  //   console.log('File has been created');
+  // })
   res.status(200);
   res.render('home', {
     results: results
