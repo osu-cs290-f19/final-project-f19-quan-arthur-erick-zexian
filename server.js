@@ -23,11 +23,34 @@ app.engine(
     defaultLayout: 'main'
   })
   );
+  
   app.set('view engine', 'handlebars');
   
   app.use(bodyParser.json());
   
   app.use(express.static('public'));
+
+  var existingData = require("./postData.json");
+
+
+  app.post('/createPost', (req, res) =>{
+    console.log(req.body);
+    existingData.push(req.body);
+    // var temp = JSON.parse("postData.json");
+    // existingData.push(req.body);
+    
+    // fs.appendFile('postData.json', JSON.stringify(req.body, null, 2), (err) =>{
+    fs.writeFile('postData.json', JSON.stringify(existingData, null, 2), (err) =>{
+      if(err){
+        console.log(err);
+        return;
+      }
+      else{
+        console.log("== postData.json has been written to.");
+      }
+    });    
+    res.status(200).send();
+  });
 
 app.get('/search/:course', async (req, res) => {
   const course = req.params.course;

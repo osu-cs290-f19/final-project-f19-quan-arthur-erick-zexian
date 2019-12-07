@@ -149,7 +149,7 @@ input, select, textarea{
   flex-direction: row;
   height: 35px;
   padding: 10px;
-
+}
 /* Page 4 */
 .searchPost-container {
   display: block;
@@ -299,4 +299,3 @@ better-sell-page
   color: #2699fb;
   background-color: white;
 }
-
