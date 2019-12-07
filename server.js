@@ -30,16 +30,28 @@ app.engine(
   
   app.use(express.static('public'));
 
+
+  app.get('/create-post', (req, res) =>{
+    /* Will need to add isbn data as a field to this */
+    res.status(200).render('create_post'); 
+  });
+
   var existingData = require("./postData.json");
 
+  function getCount(req){
+    var counter = 0;
+    for(var i = 0; i < existingData.length; i++){
+      if(existingData[i].isbn == req){
+        counter++;
+      }
+    }
+    return counter; 
+  }
 
   app.post('/createPost', (req, res) =>{
+    req.body.count = getCount(req.body.isbn);
     console.log(req.body);
     existingData.push(req.body);
-    // var temp = JSON.parse("postData.json");
-    // existingData.push(req.body);
-    
-    // fs.appendFile('postData.json', JSON.stringify(req.body, null, 2), (err) =>{
     fs.writeFile('postData.json', JSON.stringify(existingData, null, 2), (err) =>{
       if(err){
         console.log(err);
