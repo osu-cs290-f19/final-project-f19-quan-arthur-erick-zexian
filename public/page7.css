@@ -151,6 +151,8 @@ div.book-title-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  vertical-align: bottom;
+  position: relative;
 }
 
 .book-price {
@@ -165,4 +167,12 @@ div.book-title-container {
   border-width: 1px;
   border-color: #A9A9A9;
   min-height: 100px;
+}
+
+div.book-title-text {
+  font-size: 40px;
+}
+
+div.book-edition {
+  
 }
