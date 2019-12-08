@@ -3,9 +3,7 @@ const express = require('express');
 const fs = require('fs');
 const exphbs = require('express-handlebars');
 const path = require('path');
-// const qs = require("qs");
-// const getTermPublicKey = 'TnuOGEueZmOX36CyTXeyXwmYv0AwRDnR';
-// const getTermSecretKey = 'pLLmhDmvLtWmvKl6';
+
 const getTextbookPublicKey = 'Yl8lgkJbZUoGo3A5GZGAmNZf5PCvM45n';
 const getTextbookSecretKey = 'JLku2OLJXiVIQ4Wc';
 const grantType = 'client_credentials';
@@ -54,30 +52,12 @@ app.get('/search/:course', async (req, res) => {
   const courseNumber = course.substr(inputIndex, 3);
 
   results = await getTextbook(major, courseNumber);
-  // fs.appendFile('textbookData.json', JSON.stringify(results, null, 2), err => {
-  //   if (err) {
-  //     console.log(err);
-  //     return;
-  //   }
-  //   console.log('File has been created');
-  // })
+
   res.status(200);
   res.render('home', {
     results: results
   });
 })
-
-// Testing Area
-
-
-
-
-
-
-
-
-
-
 
 app.listen(3000, () => console.log('server is running on port 3000..'));
 
@@ -110,19 +90,3 @@ function getTextbook(subject, courseNumber) {
     })
     .catch((err) => console.log(err));
 }
-
-// example object:
-// {
-//   id: '9781259731280',
-//     type: 'textbook',
-//       attributes: {
-//     coverImageUrl: 'http://coverimages.verbacompete.com/no_image.jpg',
-//       title: 'Discrete Math & Its Appl (Loose-Leaf)',
-//         author: 'Rosen',
-//           edition: 8,
-//             copyrightYear: null,
-//               priceNewUSD: 116.75,
-//                 priceUsedUSD: 87.75
-//   },
-//   links: null
-// }
