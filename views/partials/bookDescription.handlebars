@@ -1,0 +1,59 @@
+<main class="content-page7">
+    <div class="left-side-container">
+        <div class="image-container">
+            <img src="{{imgSource}}" alt="{{bookTitle}}">
+        </div>
+        <div class="ISBN-container">
+            <p class="ISBN-13">{{ISBN13}}</p>
+            <p class="ISBN-10">{{ISBN10}}</p>
+        </div>
+    </div>
+
+    <div class="right-side-container">
+        <div class="book-title-container">
+            <div class="book-title-text">
+                {{bookTitle}}
+            </div>
+            <div class="book-edition">
+                {{bookEdition}}
+            </div>
+        </div>
+
+        <div class="book-author">
+            <p class="book-author-text">By {{bookAuthor}}</p>
+        </div>
+
+        <div class="book-price">
+            <p class="book-price-text">${{bookPrice}}</p>
+        </div>
+
+        <div class="book-condition">
+            <p class="book-condtion-text">{{bookCondition}}</p>
+        </div>
+
+        <div class="book-seller">
+            <div class="book-seller-meetup">
+                <p class="book-seller-meetup-preference">Meetup preference:</p>
+                <div class="book-seller-meetup-preference-input">
+                    <p class="book-seller-meetup-preference-text"> {{meetPreference}}</p>
+                </div>
+            </div>
+
+            <div class="book-seller-contact">
+                <div class="book-seller-email">
+                    <p class="book-seller-email-text">{{contactEmail}}</p>
+                </div>
+                <div class="book-seller-phone">
+                    <p class="book-seller-phone-text">{{contactPhone}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-description">
+            <p class="book-description-subcategory">Description</p>
+            <div class="book-description-box">
+                <p class="book-description-input">{{userDescription}}</p>
+            </div>
+        </div>
+    </div>
+</main>

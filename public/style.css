@@ -296,3 +296,8 @@ input, select, textarea {
   color: #2699fb;
   background-color: white;
 }
+
+/* 404 Page */
+.error-container {
+  text-align: center;
+}
