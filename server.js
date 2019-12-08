@@ -94,6 +94,21 @@ app.get('/search/:course', async (req, res) => {
   });
 })
 
+app.get('/details/:isbn', (req, res) => {
+  var dataFile = fs.readFileSync("postData.json");
+  var data = JSON.parse(dataFile);
+  //console.log(data);
+  var index = -1;
+  var toMatch = req.params.isbn.toLowerCase();
+  console.log(toMatch);
+  var filteredPost = data.find(function(item, i){
+   if (item.isbn === toMatch) {
+     index = i;
+     return i;
+   }
+  });
+  console.log(index, filteredPost);
+});
 
 app.listen(3000, () => console.log('server is running on port 3000..'));
 
