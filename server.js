@@ -42,7 +42,7 @@ app.get('/create_post/:isbn', (req, res) => {
     res.status(200).render('create_post'); 
   });
 
-  var existingData = require("./postData.json");
+  var existingData = require("./data/postData.json");
 
   function getCount(req){
     var counter = 0;
@@ -58,7 +58,7 @@ app.get('/create_post/:isbn', (req, res) => {
     req.body.count = getCount(req.body.isbn);
     console.log(req.body);
     existingData.push(req.body);
-    fs.writeFile('postData.json', JSON.stringify(existingData, null, 2), (err) =>{
+    fs.writeFile('./data/postData.json', JSON.stringify(existingData, null, 2), (err) =>{
       if(err){
         console.log(err);
         return;
