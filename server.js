@@ -30,6 +30,18 @@ app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
+app.get('/home', (req, res) => {
+  console.log('serving index.html');
+  fs.readFile(path.join(__dirname + '/data/courseData.json'), 'utf-8', (err, data) => {
+    if (err) console.log(err);
+    else {
+      res.status(200).send(JSON.parse(data));
+    }
+  })
+
+
+})
+
 app.get('/create_post/:isbn', (req, res) => {
   const isbn = req.params.isbn;
   res.sendFile(path.join(__dirname + '/public/create_post.html'));
@@ -83,6 +95,7 @@ app.get('/search/:course', async (req, res) => {
   });
 })
 
+// Testing Area
 
 app.listen(3000, () => console.log('server is running on port 3000..'));
 

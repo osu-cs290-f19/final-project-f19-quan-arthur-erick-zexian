@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/autocomplete-style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+
   <script src="index.js" defer></script>
   <title>Textbook Buddy</title>
 
@@ -36,14 +39,17 @@
       <p>To search for textbooks, please enter your class</p>
     </div>
     <div id="welcome-search">
-      <form action="#" id="class-search-form">
-        <p>Enter Your Class</p>
-        <input type="text" id="class-search-input" placeholder="CS290 or Web Development..">
+      <div class="autocomplete">
+        <form action="#" id="class-search-form" autocomplete="off">
         
-        <input type="button" id="class-search-btn" value="Search" class="btn primary-color">
-
-      </form>
+          <input type="text" id="class-search-input" placeholder="CS 290 or Web Development..">
+          
+          
+        </form>
+      </div>
+      <input type="button" id="class-search-btn" value="Search" class="btn primary-color">
     </div>
+   
   </div>
 
 
