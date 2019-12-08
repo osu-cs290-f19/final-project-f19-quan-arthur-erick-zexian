@@ -12,7 +12,7 @@ const OPTIONAL_IDX = 6;
 const IPT_CLASS = 'create-input';
 const POST_TYPE = 'textbook'
 
-var reqISBN = "I-1234567";
+var reqISBN = "155";
 var postInfo;
 var postInfoArr = new Array(NUM_FIELDS);
 

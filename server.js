@@ -45,6 +45,41 @@ app.get('/create_post/:isbn', (req, res) => {
   res.sendFile(path.join(__dirname + '/public/create_post.html'));
 });
 
+
+
+  app.get('/create-post', (req, res) =>{
+    /* Will need to add isbn data as a field to this */
+    res.status(200).render('create_post'); 
+  });
+
+  var existingData = require("./data/postData.json");
+
+  function getCount(req){
+    var counter = 0;
+    for(var i = 0; i < existingData.length; i++){
+      if(existingData[i].isbn == req){
+        counter++;
+      }
+    }
+    return counter; 
+  }
+
+  app.post('/createPost', (req, res) =>{
+    req.body.count = getCount(req.body.isbn);
+    console.log(req.body);
+    existingData.push(req.body);
+    fs.writeFile('./data/postData.json', JSON.stringify(existingData, null, 2), (err) =>{
+      if(err){
+        console.log(err);
+        return;
+      }
+      else{
+        console.log("== postData.json has been written to.");
+      }
+    });    
+    res.status(200).send();
+  });
+
 app.get('/search/:course', async (req, res) => {
   const course = req.params.course;
   const inputIndex = course.match(/[0-9]/).index;

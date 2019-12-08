@@ -146,126 +146,153 @@ input, select, textarea {
   flex-direction: row;
   height: 35px;
   padding: 10px;
-  /* Page 4 */
-  .searchPost-container {
-    display: block;
-    margin: auto;
-    padding: 10px;
-    margin-top: 100px;
-  }
-  .search-class {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  better-sell-page .create-input {
-    font-size: 14px;
-    width: 500px;
-    height: 29px;
-    padding: 2px;
-    margin: 0 auto;
-    border: 1px solid #9ed2fd;
-  }
-  #isbn-text {
-    display: flex;
-    color: grey;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: small;
-    padding: 10px;
-  }
-  .create-input-label {
-    background-color: #2699fb;
-    text-transform: uppercase;
-    font-size: small;
-    color: white;
-    padding: 10px;
-    width: 100px;
-  }
-  .create-image-box {
-    padding: 20px;
-    border: 1px solid #9dd1fd;
-  }
-  .create-image-text {
-    color: #41a5fb;
-    text-transform: uppercase;
-    font-size: small;
-  }
-  .create-image-container {
-    padding: 5px;
-  }
-  #create-back {
-    color: white;
-    background-color: #f44336;
-  }
-  #create-back:hover {
-    color: #f44336;
-    background-color: white;
-  }
-  #create-accept:hover {
-    color: #2699fb;
-    background-color: white;
-  }
-  #create-accept {
-    color: white;
-    background-color: #2699fb;
-  }
-  #isbn-text {
-    height: 13px;
-  }
-  #create-condition {
-    height: 34px;
-  }
-  .searchPost-text {
-    text-align: center;
-    color: #2699fb;
-    font-size: 2rem;
-    line-height: 1.5;
-  }
-  .search-input {
-    font-size: 14px;
-    width: 500px;
-    height: 40px;
-    padding: 2px;
-    border: 1px solid #9ed2fd;
-  }
-  .searchPost-input-label {
-    background-color: #2699fb;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: white;
-    padding: 10px;
-    float: left;
-    vertical-align: middle;
-  }
-  .action-button {
-    text-transform: uppercase;
-    font-size: smaller;
-    border: none;
-    padding: 10px;
-    padding-left: 13px;
-    padding-right: 13px;
-    border-radius: 3px;
-    /* justify-content: center; */
-  }
-  #search-action-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bold;
-    font-size: 16px;
-    padding: .6rem 2rem;
-    border: 1px solid #2699fb;
-    border-radius: 10px;
-    cursor: pointer;
-    color: white;
-    cursor: pointer;
-    background-color: #2699fb;
-  }
-  #search-action-button:hover {
-    color: #2699fb;
-    background-color: white;
-  }
+}
+/* Page 4 */
+.searchPost-container {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+.search-class {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* better-sell-page */
+
+.create-input {
+  font-size: 14px;
+  width: 500px;
+  height: 29px;
+  padding: 2px;
+  margin: 0 auto;
+  border: 1px solid #9ed2fd;
+} 
+
+#isbn-text{
+  display: flex;
+  color:grey;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: small;
+  padding: 10px;
+}
+
+.create-input-label{
+  background-color: #2699fb;
+  text-transform: uppercase;
+  font-size: small;
+  color: white;
+  padding: 10px;
+  width: 100px;
+}
+
+.create-image-box{
+  padding: 20px;
+  border: 1px solid #9dd1fd;
+
+}
+
+.create-image-text{
+  color: #41a5fb;
+  text-transform: uppercase;
+  font-size: small;
+}
+.create-image-container{
+  padding: 5px;
+}
+
+
+#create-back{
+  color: white;
+  background-color:#f44336;
+}
+
+#create-back:hover{
+  color: #f44336;
+  background-color: white;
+
+}
+
+#create-accept:hover{
+  color:#2699fb;
+  background-color: white;
+}
+
+#create-accept{
+  color: white;
+  background-color:#2699fb;
+}
+
+#isbn-text{
+  height: 13px;
+}
+
+#create-condition{
+  height: 34px;
+}
+  
+.searchPost-text {
+  text-align: center;
+  color: #2699fb;
+  font-size: 2rem;
+  line-height: 1.5;
+
+}
+
+.search-input {
+  font-size: 14px;
+  width: 500px;
+  height: 40px;
+  padding: 2px;
+  border: 1px solid #9ed2fd;
+}
+
+.searchPost-input-label {
+  background-color: #2699fb;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+  float: left;
+  vertical-align: middle;
+}
+
+.action-button {
+  text-transform: uppercase;
+  font-size: smaller;
+  border: none;
+  padding: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border-radius: 3px;
+  /* justify-content: center; */
+}
+
+#search-action-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 16px;
+  padding: .6rem 2rem;
+  border: 1px solid #2699fb;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  cursor: pointer;
+  background-color: #2699fb;
+}
+
+#search-action-button:hover {
+  color: #2699fb;
+  background-color: white;
+}
