@@ -77,13 +77,6 @@ app.get('/search/:course', async (req, res) => {
   const courseNumber = course.substr(inputIndex, 3);
 
   results = await getTextbook(major, courseNumber);
-  // fs.appendFile('textbookData.json', JSON.stringify(results, null, 2), err => {
-  //   if (err) {
-  //     console.log(err);
-  //     return;
-  //   }
-  //   console.log('File has been created');
-  // })
   res.status(200);
   res.render('home', {
     results: results
