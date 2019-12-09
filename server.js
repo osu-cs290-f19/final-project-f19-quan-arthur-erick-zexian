@@ -57,9 +57,7 @@ app.get('/create-post/:isbn', (req, res) => {
   tempReqData =JSON.parse(fs.readFileSync('./data/textbookData.json'));
   var reqIdx = getReqDatIdx(req.params.isbn);
 	const isbn = req.params.isbn;
-  console.log(isbn);
-  console.log(tempReqData);
-  // console.log('======', reqIdx);
+
   res.status(200).render('create_post', 
     {
       courseName: courseName,

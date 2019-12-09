@@ -1,6 +1,0 @@
-(function() {
-  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
-templates['sell'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div>\r\n    <main class=\"searchPost-container\">\r\n        <div class=\"searchPost-text\" id=\"search-title\">\r\n            <h2>Sell a book</h2>\r\n        </div>\r\n        <div class=\"searchPost-container\">\r\n            <div class=\"search-class\">\r\n                <label for=\"search-class\" class=\"searchPost-input-label\">Class</label>\r\n                <div class=\"search-post-element\">\r\n                    <input type=\"text\" name=\"search-text\" id=\"search-text\" class=\"search-input\"\r\n                        placeholder=\"Enter your class\">\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"searchPost-container\">\r\n            <div class=\"search-footer\">\r\n                <button type=\"button\" id=\"search-action-button\" class=\"search--button\">🡪</button>\r\n            </div>\r\n        </div>\r\n    </main>";
-},"useData":true});
-})();
