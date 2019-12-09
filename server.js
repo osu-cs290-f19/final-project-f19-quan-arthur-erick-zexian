@@ -103,22 +103,25 @@ app.get("/sell", (red, res, next) => {
 });
 
 
-app.get('/details/:postID', (req, res, next) => {
-
+app.get('/details/:isbn/:postID', (req, res, next) => {
   var dataFile = fs.readFileSync("postData.json");
   var data = JSON.parse(dataFile);
   //console.log(data);
   var index = -1;
-  var toMatch = req.params.postID.toLowerCase();
-  console.log(toMatch);
+  var toMatchID = req.params.postID;
+  var toMatchISBN = req.params.isbn;
+  // console.log("ID", toMatchID);
+  // console.log("ISBN", toMatchISBN);
   
   var filteredPost = data.find(function(item, i){
-   if (item.count == toMatch) {
-     index = i;
-     return i;
-   }
-
+    // console.log("Item count", item.count);
+    // console.log("Item ISBN", item.isbn);
+    if (item.isbn == toMatchISBN && item.count == toMatchID) {
+       index = i;
+      return i;
+    }
   });
+
   //console.log(index, filteredPost);
   if (index != -1) {
     //return page
