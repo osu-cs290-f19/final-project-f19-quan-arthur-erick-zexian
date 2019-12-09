@@ -52,6 +52,11 @@ function getReqDatIdx(req){
   return -1; /* We shouldn't ever get here */
 }
 
+app.get('/post-created', (req, res) => {
+  res.status(200);
+  res.render('post-created');
+})
+
 app.get('/create-post/:isbn', (req, res) => {
   
   tempReqData =JSON.parse(fs.readFileSync('./data/textbookData.json'));
