@@ -5,7 +5,7 @@
 
 /* Variables */
 const NUM_FIELDS = 10;
-const OPTIONAL_IDX = 6;
+const OPTIONAL_IDX = 5;
 const IPT_CLASS = 'create-input';
 const POST_TYPE = 'textbook';
 
@@ -19,7 +19,7 @@ var postInfoArr = new Array(NUM_FIELDS);
 /* Functions */
 
 function allFields() {
-	for (var i = 3; i < NUM_FIELDS - 1; i++) {
+	for (var i = 3; i < NUM_FIELDS; i++) {
 		if (i != OPTIONAL_IDX) {
 			if (document.getElementsByClassName(IPT_CLASS)[i].value == '') {
 				return false;
@@ -30,27 +30,22 @@ function allFields() {
 }
 
 function storeInput() {
-	postInfo = document.getElementsByClassName(IPT_CLASS);
-	for (var i = 0; i < NUM_FIELDS - 1; i++) {
-		postInfoArr[i] = postInfo[i].value;
-	}
-	postInfoArr[NUM_FIELDS - 1] = reqISBN;
-	console.log(postInfoArr);
-	console.log('== Input stored in postInfoArr');
+    postInfo = document.getElementsByClassName(IPT_CLASS);
+    // console.log(postInfo);
 	var newPost = {
-		title: postInfoArr[0],
-		author: postInfoArr[1],
-		condition: postInfoArr[2],
-		price: postInfoArr[3],
-		meetupInfo: postInfoArr[4],
-		description: postInfoArr[5],
-		email: postInfoArr[6],
-		phone: postInfoArr[7],
-		imgURL: postInfoArr[8],
-		isbn: reqISBN,
-		count: 0
-	};
-	console.log('== newPost object: ', newPost);
+        title: postInfo[0].innerText,
+        author: postInfo[1].innerText,
+        isbn: postInfo[2].innerText,
+        conditon: postInfo[3].value,
+        price: postInfo[4].value,
+        meetupInfo: postInfo[5].value,
+        description: postInfo[6].value,
+        email: postInfo[7].value,
+        phone: postInfo[8].value,
+        imgURL: postInfo[9].value,
+        count: 0
+    };
+	// console.log('== newPost object: ', newPost);
 	axios
 		.post('/createPost', newPost)
 		.then(function(response) {
