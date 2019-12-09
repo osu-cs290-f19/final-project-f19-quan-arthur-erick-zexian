@@ -134,12 +134,23 @@ main.content-page7 {
 }
 
 div.left-side-container {
+  min-width: 40%;
+  position: relative;
+}
 
+div.image-container {
+  max-width: 480px;
+  max-height: 360px;
 }
 
 .image-container img{
   max-width: 480px;
   max-height: 360px;
+}
+
+div.ISBN-container {
+  position: absolute;
+  bottom: 0;
 }
 
 div.right-side-container {
@@ -150,9 +161,6 @@ div.right-side-container {
 div.book-title-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  vertical-align: bottom;
-  position: relative;
 }
 
 .book-price {
@@ -174,5 +182,6 @@ div.book-title-text {
 }
 
 div.book-edition {
-  
+  margin-left: 10px;
+  margin-top: auto;
 }
