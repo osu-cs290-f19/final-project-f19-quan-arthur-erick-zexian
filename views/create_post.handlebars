@@ -2,20 +2,22 @@
             <main class="main">
                 <div class = "create-post-container">
                     {{!-- ADD COURSE NAME FIELD  --}}
-                    <h1 id="course-name" class="course-name"> BI 579 - Introduction to Cats</h1>
+                    <h1 id="course-name" class="course-name"> {{courseName}}</h1>
                 </div>
                 
                 <div class = "create-post-container">
                     <label for="create-title" class="create-input-label">Title</label>
                         <div class="create-post-element">
-                            <input type="text" name="title-text" id="title-text" class="create-input">
+                            {{!-- <input type="text" name="title-text" id="title-text" class="create-input"> --}}
+                            <label name="title-text" id="title-text" class="create-input">{{title}}</label>
                         </div>
                 </div>
 
                 <div class = "create-post-container">
                     <label for="create-author" class="create-input-label">Author</label>
                     <div class="create-post-element">
-                        <input type="text" name="author-text" id="author-text" class="create-input">
+                        <label name="author-text" id="author-text" class="create-input">{{author}}</label>
+                        {{!-- <input type="text" name="author-text" id="author-text" class="create-input"> --}}
                     </div>
                 </div>
 
