@@ -8,8 +8,8 @@ h3 {
   text-align: center;
 }
 
-.result-container {
-  width: 1200px;
+.results {
+  max-width: 1200px;
   margin: auto;
 }
 
