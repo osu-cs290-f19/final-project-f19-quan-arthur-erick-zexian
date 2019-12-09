@@ -21,7 +21,7 @@
 #welcome-search input {
   display: block;
   margin: auto;
-} 
+}
 
 #welcome-search p {
   margin-bottom: 20px;
@@ -66,13 +66,15 @@
 
 /* Create Post */
 
-input, select, textarea{
+input,
+select,
+textarea {
   color: #50a3e3;
 }
 
 
 
-.course-name{
+.course-name {
   color: #2699fb;
   font-size: x-large;
   font-weight: 100;
@@ -80,7 +82,7 @@ input, select, textarea{
 }
 
 
-.create-post-container{
+.create-post-container {
   justify-content: center;
   display: flex;
   flex-direction: row;
