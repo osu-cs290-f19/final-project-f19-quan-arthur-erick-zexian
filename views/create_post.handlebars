@@ -1,6 +1,4 @@
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-            <script src="/js/create_post.js" defer></script>
-            <title>Create New Post | Textbook Buddy</title>
+
             <main class="main">
                 <div class = "create-post-container">
                     {{!-- ADD COURSE NAME FIELD  --}}
@@ -82,7 +80,7 @@
                     {{!-- ADD COURSE ISBN FIELD --}}
                     <label for="create-isbn" class="create-input-label">ISBN</label>
                     <div class="create-post-element">
-                        <label name="isbn-text" id="isbn-text" class="create-input">I-1234567</label>
+                        <label name="isbn-text" id="isbn-text" class="create-input">{{isbn}}</label>
                     </div>
                 </div>
                 
