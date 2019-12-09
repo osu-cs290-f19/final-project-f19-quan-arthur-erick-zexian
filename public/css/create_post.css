@@ -121,6 +121,22 @@ textarea {
     font-size: small;
     padding: 10px;
 }
+#title-text {
+    display: flex;
+    color: grey;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+}
+#author-text {
+    display: flex;
+    color: grey;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+}
 
 .create-input-label {
     background-color: #2699fb;
@@ -170,6 +186,12 @@ textarea {
 }
 
 #isbn-text {
+    height: 13px;
+}
+#title-text {
+    height: 13px;
+}
+#author-text {
     height: 13px;
 }
 
