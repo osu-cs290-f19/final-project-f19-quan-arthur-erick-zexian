@@ -32,6 +32,11 @@ input, select, textarea, button {
   line-height: 48px;
 }
 
+.create-input {
+  border: none;
+  width: 450px;
+}
+
 .create-post-element {
   padding-left: 10px;
 }
@@ -90,11 +95,31 @@ input, select, textarea, button {
   width: 110px;
 }
 
+.create-post-container:nth-child(6) .create-post-container:nth-child(7) input {
+  border: none;
+}
+
 /* Description */
 
 .create-post-container:nth-child(7) .create-post-label {
   width: 110px;
 }
+
+/* Buttons */
+
+.button-group {
+  margin-top: 200px;
+  width: 600px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group button {
+  /* background-color: #26a69a; */
+}
+
+#create-back {}
 
 /* input,
 select,
