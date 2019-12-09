@@ -97,27 +97,44 @@ app.get("/search/:course", async (req, res) => {
   });
 });
 
+
 app.get("/sell", (red, res, next) => {
   res.render("sell");
 });
 
-app.get("/details/:isbn", (req, res, next) => {
+
+app.get('/details/:postID', (req, res, next) => {
+
   var dataFile = fs.readFileSync("postData.json");
   var data = JSON.parse(dataFile);
   //console.log(data);
   var index = -1;
-  var toMatch = req.params.isbn.toLowerCase();
+  var toMatch = req.params.postID.toLowerCase();
   console.log(toMatch);
-  var filteredPost = data.find(function(item, i) {
-    if (item.isbn === toMatch) {
-      index = i;
-      return i;
-    }
+  
+  var filteredPost = data.find(function(item, i){
+   if (item.count == toMatch) {
+     index = i;
+     return i;
+   }
+
   });
-  console.log(index, filteredPost);
+  //console.log(index, filteredPost);
   if (index != -1) {
     //return page
-    res.status(200);
+    res.status(200).render('./partials/bookDescription', {
+      imgSource: data[index].imageURL,
+      bookTitle: data[index].title,
+      ISBN: data[index].isbn,
+      bookEdition: "Test",
+      bookAuthor: data[index].author,
+      bookPrice: data[index].price,
+      bookCondition: data[index].condition,
+      meetPreference: data[index].meetupInfo,
+      contactEmail: data[index].email,
+      contactPhone: data[index].phone,
+      userDescription: data[index].description
+    });
   } else {
     next();
   }
