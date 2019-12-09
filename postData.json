@@ -8,7 +8,7 @@
     "description": "asd",
     "email": "asd",
     "phone": "213",
-    "imgURL": "asd",
+    "imgURL": "https://images.penguinrandomhouse.com/cover/9780804139298",
     "isbn": "I-1234567",
     "count": 0
   },
@@ -21,7 +21,7 @@
     "description": "798",
     "email": "789",
     "phone": "789",
-    "imgURL": "798",
+    "imgURL": "https://images.penguinrandomhouse.com/cover/9780804139298",
     "isbn": "I-1234567",
     "count": 1
   },
