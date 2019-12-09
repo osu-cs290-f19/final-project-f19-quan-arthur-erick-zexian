@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Roboto:400,500,500i,700,700i&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -79,23 +78,23 @@ nav .nav-elements ul {
 }
 
 /* Class search */
-
 #welcome-search {
   text-align: center;
   padding-top: 120px;
 }
 
 #welcome-search input {
+  display: block;
   margin: auto;
 }
 
 #welcome-search p {
   margin-bottom: 20px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 #welcome-search #class-search-input {
-  width: 500px;
+  width: 400px;
   padding: 8px;
   font-size: 20px;
   border-radius: 3px;
@@ -104,9 +103,8 @@ nav .nav-elements ul {
 
 #welcome-search #class-search-btn {
   margin-top: 1rem;
-  margin-left: 1rem;
-  font-size: 1.5rem;
 
+  font-size: 1.5rem;
 }
 
 /* Utility */
@@ -115,28 +113,66 @@ nav .nav-elements ul {
   background-color: #2699FB;
   color: #fff;
 }
-
 .btn {
   padding: .6rem 2rem;
   border: 0px solid #fff;
   border-radius: 10px;
   cursor: pointer;
-  width: 150px;
-  text-align: center;
 }
 
 .btn:hover {
   background-color: #65b7ff;
-orm: uppercase;
-  text-align: center;
-  font-size: small;
-  padding: 10px;
 }
 
+/* Page 7 */
+main.content-page7 {
+  display: flex;
+  align-self: center;
+  margin: 10%;
+  margin-top: 50px;
+  width: 50%
+}
 
+div.left-side-container {
 
-/* 404 Page */
-.error-container {
-  text-align: center;
+}
 
+.image-container img{
+  max-width: 480px;
+  max-height: 360px;
+}
+
+div.right-side-container {
+  min-width: 60%;
+  padding-left: 10%;
+}
+
+div.book-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.book-price {
+  padding: 10px;
+  padding-left: 0px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.book-description-box {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #A9A9A9;
+  min-height: 100px;
+}
+
+div.book-title-text {
+  font-size: 40px;
+}
+
+div.book-edition {
+  
 }
