@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Roboto:400,500,500i,700,700i&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+}
+
+/* Nav bar */
+
+nav .nav-container {
+    background-color: #2699FB;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .nav-logo {
+    font-family: 'Lobster', sans-serif;
+    font-size: 3rem;
+}
+
+nav .nav-container {
+    height: 80px;
+}
+
+nav .nav-container .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75%;
+    margin: auto;
+}
+
+nav .nav-elements {
+    width: 600px;
+}
+
+nav .nav-elements a {
+    padding: 16px;
+    border: 1px solid #2699FB;
+    border-radius: 10px;
+}
+
+nav .nav-elements a:hover {
+    background-color: #65b7ff;
+    color: #fff;
+}
+
+nav .nav-elements ul {
+    list-style: none;
+    font-size: 1.2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Page 4 */
+
+.searchPost-container {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.searchPost-text {
+    text-align: center;
+    color: #2699fb;
+    font-size: 2rem;
+    line-height: 1.5;
+
+}
+
+
+.search-class {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    font-size: 14px;
+    width: 500px;
+    height: 40px;
+    padding: 2px;
+    border: 1px solid #9ed2fd;
+}
+
+.searchPost-input-label {
+    background-color: #2699fb;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    float: left;
+    vertical-align: middle;
+}
+
+.action-button {
+    text-transform: uppercase;
+    font-size: smaller;
+    border: none;
+    padding: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 3px;
+    /* justify-content: center; */
+}
+
+#search-action-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 16px;
+    padding: .6rem 2rem;
+    border: 1px solid #2699fb;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    cursor: pointer;
+    background-color: #2699fb;
+}
+
+#search-action-button:hover {
+    color: #2699fb;
+    background-color: white;
+}
