@@ -19,7 +19,11 @@ searchBtn.addEventListener('click', event => {
   window.location = '/search/' + major + courseNumber + '/' + courseName + '/';
 })
 
-
+window.addEventListener('keydown', event => {
+  if (event.keyCode == 13) {
+    searchBtn.click();
+  }
+})
 
 
 // inp from text field and arr contains matched values
