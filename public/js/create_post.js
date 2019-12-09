@@ -66,6 +66,7 @@ function storeInput() {
 
 goBack.addEventListener('click', () => {
 	console.log('== Go back clicked');
+  window.history.back();
 });
 
 createButton.addEventListener('click', () => {
