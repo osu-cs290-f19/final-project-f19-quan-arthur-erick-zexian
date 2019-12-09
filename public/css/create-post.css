@@ -1,5 +1,11 @@
+input, select, textarea, button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
 .content {
-  max-width: 65%;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -13,21 +19,81 @@
   border: 1px solid #2699fb;
   display: flex;
   align-items: center;
+  height: 48px;
+  width: 100%;
 }
 
 .create-post-label {
-  width: 100px;
-  padding: 10px 20px;
+  width: 60px;
+  height: 48px;
+  padding: 0px 20px;
   background-color: #2699fb;
   color: white;
+  line-height: 48px;
 }
 
 .create-post-element {
   padding-left: 10px;
 }
 
-.create-post-container:nth-child(6) .create-post-label{
-  width: 125px;
+/* Condition field */
+
+.create-post-container:nth-child(4) {
+  border: none;
+}
+
+.create-post-container:nth-child(4) .create-post-label {
+  width: 90px;
+}
+
+.create-post-container:nth-child(4) .create-post-element {
+  width: 200px;
+  height: 48px;
+  padding: 0;
+  /* border: 1px solid #2699fb; */
+}
+
+.create-post-container:nth-child(4) select {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #2699fb;
+  padding-left: 25px;
+}
+
+/* Price */
+
+.create-post-container:nth-child(5) .create-post-element {
+  height: 48px;
+  /* width: 100%; */
+  border: none;
+}
+
+.create-post-container:nth-child(5) .create-post-label::after {
+  content: '$';
+  margin-left: 45px;
+  color: #2699fb;
+  z-index: 10;
+  position: relative;
+  font-size: 22px;
+}
+
+.create-post-container:nth-child(5) input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 20px;
+}
+
+/* Meetup info field */
+
+.create-post-container:nth-child(6) .create-post-label {
+  width: 110px;
+}
+
+/* Description */
+
+.create-post-container:nth-child(7) .create-post-label {
+  width: 110px;
 }
 
 /* input,
