@@ -23,7 +23,7 @@
     "phone": "789",
     "imgURL": "798",
     "isbn": "I-1234567",
-    "count": 0
+    "count": 1
   },
   {
     "title": "gkj",
@@ -36,7 +36,7 @@
     "phone": "789",
     "imgURL": "798",
     "isbn": "I-1234567",
-    "count": 0
+    "count": 3
   },
   {
     "title": "ashkdfhaskdfhdsklhfk",
@@ -49,6 +49,19 @@
     "phone": "789",
     "imgURL": "798",
     "isbn": "I-1234567",
+    "count": 4
+  },
+  {
+    "title": "adsf",
+    "author": "dsf",
+    "condition": "Excellent",
+    "price": "234",
+    "meetupInfo": "234",
+    "description": "234",
+    "email": "234",
+    "phone": "234",
+    "imgURL": "234",
+    "isbn": "I-1234367",
     "count": 0
   },
   {
@@ -61,7 +74,7 @@
     "email": "234",
     "phone": "234",
     "imgURL": "234",
-    "isbn": "I-1234567",
+    "isbn": "I-12345567",
     "count": 0
   },
   {
@@ -74,20 +87,7 @@
     "email": "234",
     "phone": "234",
     "imgURL": "234",
-    "isbn": "I-1234567",
-    "count": 0
-  },
-  {
-    "title": "adsf",
-    "author": "dsf",
-    "condition": "Excellent",
-    "price": "234",
-    "meetupInfo": "234",
-    "description": "234",
-    "email": "234",
-    "phone": "234",
-    "imgURL": "234",
-    "isbn": "I-1234567",
+    "isbn": "I-12345567",
     "count": 0
   },
   {
