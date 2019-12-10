@@ -1,5 +1,27 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['book_post'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper;
+
+  return "<body>\r\n    <main class=\"content\">\r\n        <header id=\"title-bar-container\">\r\n            <div class=\"books-info-container\">\r\n                <div class=\"title-container\" id=\"books-info\">\r\n                    <img src=\"\" alt=\"Textbook img\">\r\n                    <button type=\"button\" id=\"sellBook-action-button\" class=\"sell-button\">Sell Your Book</button>\r\n                </div>\r\n            </div>\r\n        </header>\r\n        <section id=\"post\">\r\n            "
+    + ((stack1 = ((helper = (helper = helpers.body || (depth0 != null ? depth0.body : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"body","hash":{},"data":data,"loc":{"start":{"line":12,"column":12},"end":{"line":12,"column":22}}}) : helper))) != null ? stack1 : "")
+    + "\r\n        </section>\r\n    </main>\r\n</body>";
+},"useData":true});
+templates['bookPost'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<div class=\"post-container\" data-price=\""
+    + alias4(((helper = (helper = helpers.price || (depth0 != null ? depth0.price : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"price","hash":{},"data":data,"loc":{"start":{"line":1,"column":40},"end":{"line":1,"column":49}}}) : helper)))
+    + "\" data-condition=\""
+    + alias4(((helper = (helper = helpers.condition || (depth0 != null ? depth0.condition : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"condition","hash":{},"data":data,"loc":{"start":{"line":1,"column":67},"end":{"line":1,"column":80}}}) : helper)))
+    + "\">\r\n    <div class=\"post-content\">\r\n        <div class=\"book-image-container\">\r\n            <img src=\""
+    + alias4(((helper = (helper = helpers.imgURL || (depth0 != null ? depth0.imgURL : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"imgURL","hash":{},"data":data,"loc":{"start":{"line":4,"column":22},"end":{"line":4,"column":32}}}) : helper)))
+    + "\">\r\n        </div>\r\n        <div class=\"book-info-container\">\r\n            <a href=\"#\"></a> <span class=\"book-price\">$"
+    + alias4(((helper = (helper = helpers.price || (depth0 != null ? depth0.price : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"price","hash":{},"data":data,"loc":{"start":{"line":7,"column":55},"end":{"line":7,"column":64}}}) : helper)))
+    + "</span>\r\n            <span class=\"book-condition\">"
+    + alias4(((helper = (helper = helpers.condition || (depth0 != null ? depth0.condition : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"condition","hash":{},"data":data,"loc":{"start":{"line":8,"column":41},"end":{"line":8,"column":54}}}) : helper)))
+    + "</span>\r\n        </div>\r\n    </div>\r\n</div>";
+},"useData":true});
 templates['home'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
 
