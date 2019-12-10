@@ -46,9 +46,17 @@ div.right-side-container {
   font-size: 25px;
 }
 
+.book-description {
+  height: 80px;
+}
+
+.book-seller-phone {
+  padding-bottom: 10px;
+}
+
 div.book-description-box {
   border: rgba(112, 112, 112, 0.67);
   border-style: solid;
   border-width: 1px;
-  min-height: 10%;
+  height: 100%;
 }
