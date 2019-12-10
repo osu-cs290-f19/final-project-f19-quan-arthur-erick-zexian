@@ -1,0 +1,23 @@
+<main class="post-list-container">
+  <div id="post-header">
+    <div class="book-container">
+      <div class="book-cover">
+        <img src="{{img}}" alt="">
+      </div>
+      <div class="book-info">
+        <div class="title-container">{{title}}</div>
+        <div class="author-container">{{author}}</div>
+      </div>
+    </div>
+    <div class="sell-btn">
+
+    </div>
+  </div>
+
+
+  <section id="posts">
+    {{#each postList}}
+    {{> user-post}}
+    {{/each}}
+  </section>
+</main>

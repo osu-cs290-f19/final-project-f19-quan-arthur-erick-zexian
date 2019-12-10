@@ -38,7 +38,7 @@ input, select, textarea, button {
 
 .create-input {
   border: none;
-  width: 450px;
+  width: 435px;
 }
 
 .create-post-element {
@@ -96,7 +96,7 @@ input, select, textarea, button {
 /* Meetup info field */
 
 .create-post-container:nth-child(6) .create-post-label {
-  width: 110px;
+  width: 130px;
 }
 
 .create-post-container:nth-child(6) .create-post-container:nth-child(7) input {
@@ -106,7 +106,7 @@ input, select, textarea, button {
 /* Description */
 
 .create-post-container:nth-child(7) .create-post-label {
-  width: 110px;
+  width: 150px;
 }
 
 /* Buttons */
@@ -122,120 +122,3 @@ input, select, textarea, button {
 #create-back {
   background-color: #ee6e73;
 }
-
-/* input,
-select,
-textarea {
-    color: #50a3e3;
-}
-
-.course-name {
-    color: #2699fb;
-    font-size: x-large;
-    font-weight: 100;
-}
-
-.create-post-container {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    height: 35px;
-    padding: 10px;
-}
-
-/* better-sell-page */
-
-/* .create-input {
-    font-size: 14px;
-    width: 500px;
-    height: 29px;
-    padding: 2px;
-    margin: 0 auto;
-    border: 1px solid #9ed2fd;
-}
-
-#isbn-text {
-    display: flex;
-    color: grey;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: small;
-    padding: 10px;
-}
-#title-text {
-    display: flex;
-    color: grey;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: small;
-    padding: 10px;
-}
-#author-text {
-    display: flex;
-    color: grey;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: small;
-    padding: 10px;
-}
-
-.create-input-label {
-    background-color: #2699fb;
-    text-transform: uppercase;
-    font-size: small;
-    color: white;
-    padding: 10px;
-    width: 100px;
-}
-
-.create-image-box {
-    padding: 20px;
-    border: 1px solid #9dd1fd;
-
-}
-
-.create-image-text {
-    color: #41a5fb;
-    text-transform: uppercase;
-    font-size: small;
-}
-
-.create-image-container {
-    padding: 5px;
-}
-
-
-#create-back {
-    color: white;
-    background-color: #f44336;
-}
-
-#create-back:hover {
-    color: #f44336;
-    background-color: white;
-
-}
-
-#create-accept:hover {
-    color: #2699fb;
-    background-color: white;
-}
-
-#create-accept {
-    color: white;
-    background-color: #2699fb;
-}
-
-#isbn-text {
-    height: 13px;
-}
-#title-text {
-    height: 13px;
-}
-#author-text {
-    height: 13px;
-}
-
-#create-condition {
-    height: 34px;
-} */

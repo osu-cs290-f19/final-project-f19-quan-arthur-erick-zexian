@@ -1,0 +1,31 @@
+.post-list-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.post-container {
+  margin-bottom: 10px;
+}
+
+.post-content {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.book-image-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.book-info-container {
+  padding-left: 25px;
+}
+
+.book-price {
+  margin: 20px 0;
+}
+
+.post-container {
+  border-bottom: 1px solid #333;
+}

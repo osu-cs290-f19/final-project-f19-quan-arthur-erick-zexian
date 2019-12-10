@@ -17,10 +17,9 @@ var postInfo;
 var postInfoArr = new Array(NUM_FIELDS);
 var reqURL;
 
-
 /* Functions */
 function allFields() {
-	for (var i = 3; i < NUM_FIELDS-1; i++) {
+	for (var i = 3; i < NUM_FIELDS - 1; i++) {
 		if (i != OPTIONAL_IDX) {
 			if (document.getElementsByClassName(IPT_CLASS)[i].value == '') {
 				return false;
@@ -31,21 +30,21 @@ function allFields() {
 }
 
 function storeInput() {
-    postInfo = document.getElementsByClassName(IPT_CLASS);
-    // console.log(postInfo);
+	postInfo = document.getElementsByClassName(IPT_CLASS);
+	// console.log(postInfo);
 	var newPost = {
-        title: postInfo[0].innerText,
-        author: postInfo[1].innerText,
-        isbn: postInfo[2].innerText,
-        conditon: postInfo[3].value,
-        price: postInfo[4].value,
-        meetupInfo: postInfo[5].value,
-        description: postInfo[6].value,
-        email: postInfo[7].value,
-        phone: postInfo[8].value,
-        imgURL: postInfo[9].innerText,
-        count: 0
-    };
+		title: postInfo[0].innerText,
+		author: postInfo[1].innerText,
+		isbn: postInfo[2].innerText,
+		condition: postInfo[3].value,
+		price: postInfo[4].value,
+		meetupInfo: postInfo[5].value,
+		description: postInfo[6].value,
+		email: postInfo[7].value,
+		phone: postInfo[8].value,
+		imgURL: postInfo[9].innerText,
+		count: 0
+	};
 	// console.log('== newPost object: ', newPost);
 	axios
 		.post('/createPost', newPost)
@@ -62,7 +61,7 @@ function storeInput() {
 
 goBack.addEventListener('click', () => {
 	console.log('== Go back clicked');
-  window.history.back();
+	window.history.back();
 });
 
 createButton.addEventListener('click', () => {
