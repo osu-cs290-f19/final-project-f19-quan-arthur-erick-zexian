@@ -124,7 +124,7 @@ app.get('/sell', (red, res, next) => {
 });
 
 app.get('/details/:isbn/:postID', (req, res, next) => {
-	var dataFile = fs.readFileSync('postData.json');
+	var dataFile = fs.readFileSync('./data/postData.json');
 	var data = JSON.parse(dataFile);
 	//console.log(data);
 	var index = -1;
@@ -149,7 +149,6 @@ app.get('/details/:isbn/:postID', (req, res, next) => {
 			imgSource: data[index].imgURL,
 			bookTitle: data[index].title,
 			ISBN: data[index].isbn,
-			bookEdition: 'Test',
 			bookAuthor: data[index].author,
 			bookPrice: data[index].price,
 			bookCondition: data[index].condition,
