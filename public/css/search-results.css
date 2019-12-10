@@ -16,6 +16,8 @@ h3 {
 .post {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  height: 180px;
 }
 
 .post-info {
@@ -31,10 +33,4 @@ h3 {
 .book-cover img {
   max-width: 100%;
   max-height: 100%;
-}
-
-#sell-button .sell-btn {
-  margin-right: 100px;
-  margin-top: 30px;
-  width: 200px;
 }

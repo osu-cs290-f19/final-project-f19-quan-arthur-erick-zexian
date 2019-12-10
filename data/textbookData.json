@@ -1,29 +1,29 @@
 [
   {
-    "id": "9780357097724",
+    "id": "9780679745587",
     "type": "textbook",
     "attributes": {
-      "coverImageUrl": "http://coverimages.verbacompete.com/no_image.jpg",
-      "title": "Discrete Mathematics W/Appl Loose-Leaf W/Webassign Access Code Pkg",
-      "author": "Epp (2)",
-      "edition": 5,
-      "copyrightYear": null,
-      "priceNewUSD": 131,
-      "priceUsedUSD": null
+      "coverImageUrl": "http://coverimages.verbacompete.com/87ef2dbc-1d5d-524c-a646-5c12d7a3eddb.jpg",
+      "title": "In Cold Blood",
+      "author": "Capote",
+      "edition": null,
+      "copyrightYear": 1993,
+      "priceNewUSD": 13.75,
+      "priceUsedUSD": 7.25
     },
     "links": null
   },
   {
-    "id": "9781259731280",
+    "id": "9781598530315",
     "type": "textbook",
     "attributes": {
-      "coverImageUrl": "http://coverimages.verbacompete.com/no_image.jpg",
-      "title": "Discrete Math & Its Appl (Loose-Leaf)",
-      "author": "Rosen",
-      "edition": 8,
+      "coverImageUrl": "http://coverimages.verbacompete.com/33ce9839-0a41-5d62-82f2-a54e8a263caa.jpg",
+      "title": "True Crime",
+      "author": "Schechter",
+      "edition": null,
       "copyrightYear": null,
-      "priceNewUSD": 116.75,
-      "priceUsedUSD": 87.75
+      "priceNewUSD": 29,
+      "priceUsedUSD": 17.75
     },
     "links": null
   }

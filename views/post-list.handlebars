@@ -1,5 +1,5 @@
 <main class="post-list-container">
-  <div id="post-header">
+  <div id="post-header" data-isbn={{isbn}}>
     <div class="book-container">
       <div class="book-cover">
         <img src="{{img}}" alt="">
@@ -9,13 +9,13 @@
         <div class="author-container">{{author}}</div>
       </div>
     </div>
-    <div class="sell-btn">
-
+    <div id="sell-button">
+      <input type="button" value="Sell This Book" class="btn primary-color sell-btn">
     </div>
   </div>
 
 
-  <section id="posts">
+  <section id=" posts">
     {{#each postList}}
     {{> user-post}}
     {{/each}}
