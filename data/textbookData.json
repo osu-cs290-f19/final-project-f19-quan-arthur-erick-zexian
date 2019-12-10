@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "id": "9780357097724",
+    "type": "textbook",
+    "attributes": {
+      "coverImageUrl": "http://coverimages.verbacompete.com/no_image.jpg",
+      "title": "Discrete Mathematics W/Appl Loose-Leaf W/Webassign Access Code Pkg",
+      "author": "Epp (2)",
+      "edition": 5,
+      "copyrightYear": null,
+      "priceNewUSD": 131,
+      "priceUsedUSD": null
+    },
+    "links": null
+  },
+  {
+    "id": "9781259731280",
+    "type": "textbook",
+    "attributes": {
+      "coverImageUrl": "http://coverimages.verbacompete.com/no_image.jpg",
+      "title": "Discrete Math & Its Appl (Loose-Leaf)",
+      "author": "Rosen",
+      "edition": 8,
+      "copyrightYear": null,
+      "priceNewUSD": 116.75,
+      "priceUsedUSD": 87.75
+    },
+    "links": null
+  }
+]
