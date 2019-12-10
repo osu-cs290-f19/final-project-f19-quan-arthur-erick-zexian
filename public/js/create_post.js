@@ -4,7 +4,7 @@
  ***************/
 
 /* Variables */
-const NUM_FIELDS = 10;
+const NUM_FIELDS = 9;
 const OPTIONAL_IDX = 5;
 const IPT_CLASS = 'create-input';
 const POST_TYPE = 'textbook';
@@ -42,7 +42,7 @@ function storeInput() {
         description: postInfo[6].value,
         email: postInfo[7].value,
         phone: postInfo[8].value,
-        imgURL: postInfo[9].value,
+        // imgURL: postInfo[9].value,
         count: 0
     };
 	// console.log('== newPost object: ', newPost);
