@@ -164,7 +164,7 @@ app.get('/details/:isbn/:postID', (req, res, next) => {
 	//console.log(index, filteredPost);
 	if (index != -1) {
 		console.log('link:', data[index].imgURL);
-		res.status(200).render('./partials/bookDescription', {
+		res.status(200).render('post-details', {
 			imgSource: data[index].imgURL,
 			bookTitle: data[index].title,
 			ISBN: data[index].isbn,

@@ -1,5 +1,32 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['post-details'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<main class=\"post-details-content\">\r\n  <div class=\"left-side-container\">\r\n    <div class=\"image-container\">\r\n      <img src="
+    + alias4(((helper = (helper = helpers.imgSource || (depth0 != null ? depth0.imgSource : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"imgSource","hash":{},"data":data,"loc":{"start":{"line":4,"column":15},"end":{"line":4,"column":28}}}) : helper)))
+    + " alt="
+    + alias4(((helper = (helper = helpers.bookTitle || (depth0 != null ? depth0.bookTitle : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"bookTitle","hash":{},"data":data,"loc":{"start":{"line":4,"column":33},"end":{"line":4,"column":46}}}) : helper)))
+    + ">\r\n    </div>\r\n    <div class=\"isbn-container\">\r\n      <span class=\"post-label\">ISBN: </span>"
+    + alias4(((helper = (helper = helpers.ISBN || (depth0 != null ? depth0.ISBN : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"ISBN","hash":{},"data":data,"loc":{"start":{"line":7,"column":44},"end":{"line":7,"column":52}}}) : helper)))
+    + "\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"right-side-container\">\r\n    <div class=\"book-title post-field\">\r\n      <span class=\"post-label\">Title: </span>"
+    + alias4(((helper = (helper = helpers.bookTitle || (depth0 != null ? depth0.bookTitle : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"bookTitle","hash":{},"data":data,"loc":{"start":{"line":13,"column":45},"end":{"line":13,"column":58}}}) : helper)))
+    + "\r\n    </div>\r\n\r\n    <div class=\"book-author post-field\">\r\n      <span class=\"post-label\">Author: </span>"
+    + alias4(((helper = (helper = helpers.bookAuthor || (depth0 != null ? depth0.bookAuthor : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"bookAuthor","hash":{},"data":data,"loc":{"start":{"line":17,"column":46},"end":{"line":17,"column":60}}}) : helper)))
+    + "\r\n    </div>\r\n\r\n    <div class=\"book-price post-field\">\r\n      <span class=\"post-label\">Price: $</span>"
+    + alias4(((helper = (helper = helpers.bookPrice || (depth0 != null ? depth0.bookPrice : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"bookPrice","hash":{},"data":data,"loc":{"start":{"line":21,"column":46},"end":{"line":21,"column":59}}}) : helper)))
+    + "\r\n    </div>\r\n\r\n    <div class=\"book-condition post-field\">\r\n      <span class=\"post-label\">Condition: </span> "
+    + alias4(((helper = (helper = helpers.bookCondition || (depth0 != null ? depth0.bookCondition : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"bookCondition","hash":{},"data":data,"loc":{"start":{"line":25,"column":50},"end":{"line":25,"column":67}}}) : helper)))
+    + "\r\n    </div>\r\n\r\n\r\n    <div class=\"meetup-pref post-field\">\r\n      <span class=\"post-label\">Meetup preference: </span>"
+    + alias4(((helper = (helper = helpers.meetPreference || (depth0 != null ? depth0.meetPreference : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"meetPreference","hash":{},"data":data,"loc":{"start":{"line":30,"column":57},"end":{"line":30,"column":75}}}) : helper)))
+    + "\r\n    </div>\r\n\r\n    <div class=\"seller-contact post-field\">\r\n      <span class=\"post-label\">Email: </span>"
+    + alias4(((helper = (helper = helpers.contactEmail || (depth0 != null ? depth0.contactEmail : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"contactEmail","hash":{},"data":data,"loc":{"start":{"line":34,"column":45},"end":{"line":34,"column":61}}}) : helper)))
+    + "\r\n    </div>\r\n    <div class=\"seller-phone post-field\">\r\n      <span class=\"post-label\">Phone: </span>"
+    + alias4(((helper = (helper = helpers.contactPhone || (depth0 != null ? depth0.contactPhone : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"contactPhone","hash":{},"data":data,"loc":{"start":{"line":37,"column":45},"end":{"line":37,"column":61}}}) : helper)))
+    + "\r\n    </div>\r\n\r\n\r\n\r\n    <div class=\"book-description post-field\">\r\n      <span class=\"post-label\">Description:</span>\r\n      <div class=\"book-description-box\">\r\n        "
+    + alias4(((helper = (helper = helpers.userDescription || (depth0 != null ? depth0.userDescription : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"userDescription","hash":{},"data":data,"loc":{"start":{"line":45,"column":8},"end":{"line":45,"column":27}}}) : helper)))
+    + "\r\n      </div>\r\n    </div>\r\n  </div>\r\n</main>";
+},"useData":true});
 templates['post-list'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
 

@@ -1,0 +1,49 @@
+<main class="post-details-content">
+  <div class="left-side-container">
+    <div class="image-container">
+      <img src={{imgSource}} alt={{bookTitle}}>
+    </div>
+    <div class="isbn-container">
+      <span class="post-label">ISBN: </span>{{ISBN}}
+    </div>
+  </div>
+
+  <div class="right-side-container">
+    <div class="book-title post-field">
+      <span class="post-label">Title: </span>{{bookTitle}}
+    </div>
+
+    <div class="book-author post-field">
+      <span class="post-label">Author: </span>{{bookAuthor}}
+    </div>
+
+    <div class="book-price post-field">
+      <span class="post-label">Price: $</span>{{bookPrice}}
+    </div>
+
+    <div class="book-condition post-field">
+      <span class="post-label">Condition: </span> {{bookCondition}}
+    </div>
+
+
+    <div class="meetup-pref post-field">
+      <span class="post-label">Meetup preference: </span>{{meetPreference}}
+    </div>
+
+    <div class="seller-contact post-field">
+      <span class="post-label">Email: </span>{{contactEmail}}
+    </div>
+    <div class="seller-phone post-field">
+      <span class="post-label">Phone: </span>{{contactPhone}}
+    </div>
+
+
+
+    <div class="book-description post-field">
+      <span class="post-label">Description:</span>
+      <div class="book-description-box">
+        {{userDescription}}
+      </div>
+    </div>
+  </div>
+</main>
