@@ -8,8 +8,8 @@ h3 {
   text-align: center;
 }
 
-.result-container {
-  width: 1200px;
+.results {
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -36,9 +36,8 @@ h3 {
 #sell-btn {
   margin-right: 100px;
   margin-top: 30px;
+  width: 200px;
 }
-
-
 
 /* Utility classes */
 

@@ -1,0 +1,241 @@
+input, select, textarea, button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+.content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.course-name-container {
+  margin: 2rem;
+  font-size: 1rem;
+}
+
+.create-post-container {
+  margin-bottom: 32px;
+  border: 1px solid #2699fb;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  width: 100%;
+}
+
+.create-post-label {
+  width: 60px;
+  height: 48px;
+  padding: 0px 20px;
+  background-color: #2699fb;
+  color: white;
+  line-height: 48px;
+}
+
+.create-input {
+  border: none;
+  width: 450px;
+}
+
+.create-post-element {
+  padding-left: 10px;
+}
+
+/* Condition field */
+
+.create-post-container:nth-child(4) {
+  border: none;
+}
+
+.create-post-container:nth-child(4) .create-post-label {
+  width: 90px;
+}
+
+.create-post-container:nth-child(4) .create-post-element {
+  width: 200px;
+  height: 48px;
+  padding: 0;
+  /* border: 1px solid #2699fb; */
+}
+
+.create-post-container:nth-child(4) select {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #2699fb;
+  padding-left: 25px;
+}
+
+/* Price */
+
+.create-post-container:nth-child(5) .create-post-element {
+  height: 48px;
+  /* width: 100%; */
+  border: none;
+}
+
+.create-post-container:nth-child(5) .create-post-label::after {
+  content: '$';
+  margin-left: 45px;
+  color: #2699fb;
+  z-index: 10;
+  position: relative;
+  font-size: 22px;
+}
+
+.create-post-container:nth-child(5) input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 20px;
+}
+
+/* Meetup info field */
+
+.create-post-container:nth-child(6) .create-post-label {
+  width: 110px;
+}
+
+.create-post-container:nth-child(6) .create-post-container:nth-child(7) input {
+  border: none;
+}
+
+/* Description */
+
+.create-post-container:nth-child(7) .create-post-label {
+  width: 110px;
+}
+
+/* Buttons */
+
+.button-group {
+  margin-top: 200px;
+  width: 600px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#create-back {
+  background-color: #ee6e73;
+}
+
+/* input,
+select,
+textarea {
+    color: #50a3e3;
+}
+
+.course-name {
+    color: #2699fb;
+    font-size: x-large;
+    font-weight: 100;
+}
+
+.create-post-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    padding: 10px;
+}
+
+/* better-sell-page */
+
+/* .create-input {
+    font-size: 14px;
+    width: 500px;
+    height: 29px;
+    padding: 2px;
+    margin: 0 auto;
+    border: 1px solid #9ed2fd;
+}
+
+#isbn-text {
+    display: flex;
+    color: grey;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+}
+#title-text {
+    display: flex;
+    color: grey;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+}
+#author-text {
+    display: flex;
+    color: grey;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+}
+
+.create-input-label {
+    background-color: #2699fb;
+    text-transform: uppercase;
+    font-size: small;
+    color: white;
+    padding: 10px;
+    width: 100px;
+}
+
+.create-image-box {
+    padding: 20px;
+    border: 1px solid #9dd1fd;
+
+}
+
+.create-image-text {
+    color: #41a5fb;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.create-image-container {
+    padding: 5px;
+}
+
+
+#create-back {
+    color: white;
+    background-color: #f44336;
+}
+
+#create-back:hover {
+    color: #f44336;
+    background-color: white;
+
+}
+
+#create-accept:hover {
+    color: #2699fb;
+    background-color: white;
+}
+
+#create-accept {
+    color: white;
+    background-color: #2699fb;
+}
+
+#isbn-text {
+    height: 13px;
+}
+#title-text {
+    height: 13px;
+}
+#author-text {
+    height: 13px;
+}
+
+#create-condition {
+    height: 34px;
+} */
