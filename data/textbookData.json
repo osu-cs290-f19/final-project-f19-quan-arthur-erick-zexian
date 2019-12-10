@@ -1,3 +1,44 @@
 [
-
+  {
+    "id": "9780135381793",
+    "type": "textbook",
+    "attributes": {
+      "coverImageUrl": "http://coverimages.verbacompete.com/no_image.jpg",
+      "title": "Assembly Lang For X86 Processors (Redshelf Digital)",
+      "author": "Irvine",
+      "edition": 8,
+      "copyrightYear": null,
+      "priceNewUSD": 63.75,
+      "priceUsedUSD": null
+    },
+    "links": null
+  },
+  {
+    "id": "9780735611313",
+    "type": "textbook",
+    "attributes": {
+      "coverImageUrl": "http://coverimages.verbacompete.com/a1a17aaf-5b38-5101-b07b-7ede508805f4.jpg",
+      "title": "Code",
+      "author": "Petzold",
+      "edition": 2,
+      "copyrightYear": 2001,
+      "priceNewUSD": 20.75,
+      "priceUsedUSD": 15.75
+    },
+    "links": null
+  },
+  {
+    "id": "9780262640688",
+    "type": "textbook",
+    "attributes": {
+      "coverImageUrl": "http://coverimages.verbacompete.com/648e9cf2-69b6-5e44-a24c-1a599fa707fa.jpg",
+      "title": "Elements Of Computing Systems",
+      "author": "Nisan",
+      "edition": null,
+      "copyrightYear": 2008,
+      "priceNewUSD": 33.5,
+      "priceUsedUSD": 25.25
+    },
+    "links": null
+  }
 ]
