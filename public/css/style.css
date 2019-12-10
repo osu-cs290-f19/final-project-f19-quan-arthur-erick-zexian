@@ -2,6 +2,7 @@
 @import 'search-results.css';
 @import 'create-post.css';
 @import 'page7.css';
+@import '404.css';
 * {
   margin: 0;
   padding: 0;
