@@ -72,7 +72,8 @@ app.get('/details/:isbn/', (req, res) => {
 			postList: matchedPosts,
 			title: matchedPosts[0].title,
 			author: matchedPosts[0].author,
-			img: matchedPosts[0].imgURL
+			img: matchedPosts[0].imgURL,
+      isbn: matchedPosts[0].isbn
 		});
 	} else {
 		res.status(404).send('Post Not Found');

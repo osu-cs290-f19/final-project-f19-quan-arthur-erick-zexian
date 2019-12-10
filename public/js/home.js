@@ -7,13 +7,15 @@ templates['post-list'] = template({"1":function(container,depth0,helpers,partial
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<main class=\"post-list-container\">\r\n  <div id=\"post-header\">\r\n    <div class=\"book-container\">\r\n      <div class=\"book-cover\">\r\n        <img src=\""
+  return "<main class=\"post-list-container\">\r\n  <div id=\"post-header\" data-isbn="
+    + alias4(((helper = (helper = helpers.isbn || (depth0 != null ? depth0.isbn : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"isbn","hash":{},"data":data,"loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":42}}}) : helper)))
+    + ">\r\n    <div class=\"book-container\">\r\n      <div class=\"book-cover\">\r\n        <img src=\""
     + alias4(((helper = (helper = helpers.img || (depth0 != null ? depth0.img : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"img","hash":{},"data":data,"loc":{"start":{"line":5,"column":18},"end":{"line":5,"column":25}}}) : helper)))
     + "\" alt=\"\">\r\n      </div>\r\n      <div class=\"book-info\">\r\n        <div class=\"title-container\">"
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":8,"column":37},"end":{"line":8,"column":46}}}) : helper)))
     + "</div>\r\n        <div class=\"author-container\">"
     + alias4(((helper = (helper = helpers.author || (depth0 != null ? depth0.author : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"author","hash":{},"data":data,"loc":{"start":{"line":9,"column":38},"end":{"line":9,"column":48}}}) : helper)))
-    + "</div>\r\n      </div>\r\n    </div>\r\n    <div class=\"sell-btn\">\r\n\r\n    </div>\r\n  </div>\r\n\r\n\r\n  <section id=\"posts\">\r\n"
+    + "</div>\r\n      </div>\r\n    </div>\r\n    <div id=\"sell-button\">\r\n      <input type=\"button\" value=\"Sell This Book\" class=\"btn primary-color sell-btn\">\r\n    </div>\r\n  </div>\r\n\r\n\r\n  <section id=\" posts\">\r\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.postList : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":19,"column":4},"end":{"line":21,"column":13}}})) != null ? stack1 : "")
     + "  </section>\r\n</main>";
 },"usePartial":true,"useData":true});

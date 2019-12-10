@@ -1,7 +1,56 @@
 .post-list-container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: auto;
 }
+
+/* Post Header */
+
+#post-header {
+  max-width: 1000px;
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* book-container */
+
+.book-container {
+  display: flex;
+  flex-basis: 800px;
+}
+
+/* Sell Button */
+
+#sell-button {
+  position: relative;
+}
+
+#sell-button .sell-btn {
+  width: 200px;
+  background-color: #1caa46;
+  position: absolute;
+  /* top: 10px; */
+  right: 0px;
+}
+
+/* Book info */
+
+.book-cover img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.title-container {
+  font-weight: 700;
+}
+
+.author-container {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+/* posts */
 
 .post-container {
   margin-bottom: 10px;
@@ -9,7 +58,7 @@
 
 .post-content {
   display: flex;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .book-image-container img {
@@ -27,5 +76,5 @@
 }
 
 .post-container {
-  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
 }
