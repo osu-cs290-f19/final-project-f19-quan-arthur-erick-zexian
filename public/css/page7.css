@@ -1,62 +1,52 @@
 /* Page 7 */
-
 main.content-page7 {
+  margin-top: 2%;
   display: flex;
-  align-self: center;
-  margin: 10%;
-  margin-top: 50px;
-  width: 50%
 }
 
-div.left-side-container {
-  min-width: 40%;
+.img {
   position: relative;
+  float: left;
+  width:  300px;
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
 }
 
 div.image-container {
-  max-width: 480px;
-  max-height: 360px;
+  max-width: 300px;
+  max-height: 400px;
 }
 
-.image-container img {
-  max-width: 480px;
-  max-height: 360px;
-}
-
-div.ISBN-container {
-  position: absolute;
-  bottom: 0;
+div.left-side-container {
+  position: relative;
+  margin-left: 20%;
 }
 
 div.right-side-container {
-  min-width: 60%;
-  padding-left: 10%;
+  min-width: 40%;
+  max-width: 40%;
+  padding-left: 5%;
+  margin-bottom: auto;
 }
 
-div.book-title-container {
-  display: flex;
-  flex-direction: row;
+.book-title-text {
+  font-size: 30px;
+}
+
+.book-author {
+  font-size: 25px;
+  margin-bottom: 1%;
 }
 
 .book-price {
-  padding: 10px;
-  padding-left: 0px;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 25px;
 }
 
-.book-description-box {
+div.book-description-box {
+  border: rgba(112, 112, 112, 0.67);
   border-style: solid;
   border-width: 1px;
-  border-color: #A9A9A9;
-  min-height: 100px;
-}
-
-div.book-title-text {
-  font-size: 40px;
-}
-
-div.book-edition {
-  margin-left: 10px;
-  margin-top: auto;
+  min-height: 10%;
 }
