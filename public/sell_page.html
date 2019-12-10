@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/css/sell_page.css">
+  <link rel="stylesheet" href="./css/sell_page-style.css">
+  <link rel="stylesheet" href="./css/autocomplete-style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/sell_page.js"></script>
   <title>Textbook Buddy</title>
 </head>
 
@@ -22,7 +25,6 @@
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
-
         </div>
       </div>
     </div>
@@ -37,18 +39,20 @@
       <div class="searchPost-container">
         <div class="search-class">
           <label for="search-class" class="searchPost-input-label">Class</label>
-          <div class="search-post-element">
-            <input type="text" name="search-text" id="search-text" class="search-input" placeholder="Enter your class">
+          <div class="autocomplete">
+            <form action="#" id="search-text-form" autocomplete="off">
+              <input type="text" name="search-text" id="search-text" class="search-input"
+                placeholder="Enter your class">
+            </form>
           </div>
         </div>
       </div>
       <div class="searchPost-container">
         <div class="search-footer">
-          <button type="button" id="search-action-button" class="search--button">🡪</button>
+          <button type="button" id="search-action-button" class="search-button">🡪</button>
         </div>
       </div>
       <main>
-
 </body>
 
 </html>
