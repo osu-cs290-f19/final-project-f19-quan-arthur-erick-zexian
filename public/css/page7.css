@@ -1,4 +1,5 @@
 /* Page 7 */
+
 main.content-page7 {
   display: flex;
   align-self: center;
@@ -17,7 +18,7 @@ div.image-container {
   max-height: 360px;
 }
 
-.image-container img{
+.image-container img {
   max-width: 480px;
   max-height: 360px;
 }
