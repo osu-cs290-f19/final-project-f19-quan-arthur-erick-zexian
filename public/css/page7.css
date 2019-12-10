@@ -4,20 +4,21 @@ main.content-page7 {
   display: flex;
 }
 
-.img {
+div.image-container {
+  width: 300px;
+  height: 400px;
+}
+
+.image-container img {
   position: relative;
   float: left;
-  width:  300px;
-  height: 400px;
+  width: 100%;
+  /*height: 100%;*/
   background-position: 50% 50%;
   background-repeat:   no-repeat;
   background-size:     cover;
 }
 
-div.image-container {
-  max-width: 300px;
-  max-height: 400px;
-}
 
 div.left-side-container {
   position: relative;
@@ -32,7 +33,8 @@ div.right-side-container {
 }
 
 .book-title-text {
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .book-author {
