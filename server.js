@@ -60,12 +60,15 @@ app.get('/create-post/:isbn', (req, res) => {
 	var reqIdx = getReqDatIdx(req.params.isbn);
 	const isbn = req.params.isbn;
 
-	res.status(200).render('create_post', {
-		courseName: courseName,
-		isbn: isbn,
-		title: tempReqData[reqIdx].attributes.title,
-		author: tempReqData[reqIdx].attributes.author
-	});
+
+  res.status(200).render('create_post', 
+    {
+      courseName: courseName,
+      isbn: isbn,
+      title: tempReqData[reqIdx].attributes.title,
+	  author: tempReqData[reqIdx].attributes.author,
+	  imgURL: tempReqData[reqIdx].attributes.coverImageUrl
+    });
 });
 
 var existingData = require('./data/postData.json');
