@@ -37,5 +37,17 @@
     "phone": "5031234567",
     "imgURL": "http://placekitten.com/400/400",
     "count": 0
+  },
+  {
+    "title": "See Instructor For Course Materials - No Cost",
+    "author": "Staff",
+    "isbn": "BS19707174",
+    "conditon": "Poor",
+    "price": "5",
+    "meetupInfo": "SEC 3-6am",
+    "description": "Falling apart",
+    "email": "averageStudent@aol.com",
+    "phone": "1234567789",
+    "count": 0
   }
 ]
