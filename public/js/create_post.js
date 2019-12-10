@@ -4,7 +4,7 @@
  ***************/
 
 /* Variables */
-const NUM_FIELDS = 9;
+const NUM_FIELDS = 10;
 const OPTIONAL_IDX = 5;
 const IPT_CLASS = 'create-input';
 const POST_TYPE = 'textbook';
@@ -15,11 +15,12 @@ const createButton = document.getElementById('create-accept');
 var reqISBN = '155';
 var postInfo;
 var postInfoArr = new Array(NUM_FIELDS);
+var reqURL;
+
 
 /* Functions */
-
 function allFields() {
-	for (var i = 3; i < NUM_FIELDS; i++) {
+	for (var i = 3; i < NUM_FIELDS-1; i++) {
 		if (i != OPTIONAL_IDX) {
 			if (document.getElementsByClassName(IPT_CLASS)[i].value == '') {
 				return false;
@@ -42,7 +43,7 @@ function storeInput() {
         description: postInfo[6].value,
         email: postInfo[7].value,
         phone: postInfo[8].value,
-        // imgURL: postInfo[9].value,
+        imgURL: postInfo[9].innerText,
         count: 0
     };
 	// console.log('== newPost object: ', newPost);

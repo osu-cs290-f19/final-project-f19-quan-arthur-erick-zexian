@@ -1,29 +1,29 @@
 [
   {
-    "id": "BS19707174",
+    "id": "9780357097724",
     "type": "textbook",
     "attributes": {
       "coverImageUrl": "http://coverimages.verbacompete.com/no_image.jpg",
-      "title": "See Instructor For Course Materials - No Cost",
-      "author": "Staff",
-      "edition": null,
+      "title": "Discrete Mathematics W/Appl Loose-Leaf W/Webassign Access Code Pkg",
+      "author": "Epp (2)",
+      "edition": 5,
       "copyrightYear": null,
-      "priceNewUSD": 0,
+      "priceNewUSD": 131,
       "priceUsedUSD": null
     },
     "links": null
   },
   {
-    "id": "9781593272203",
+    "id": "9781259731280",
     "type": "textbook",
     "attributes": {
-      "coverImageUrl": "http://coverimages.verbacompete.com/5a9631e5-9e8c-5ef3-9898-df6488f94ce8.jpg",
-      "title": "Linux Programming Interface",
-      "author": "Kerrisk",
-      "edition": null,
-      "copyrightYear": 2010,
-      "priceNewUSD": 72,
-      "priceUsedUSD": 54
+      "coverImageUrl": "http://coverimages.verbacompete.com/no_image.jpg",
+      "title": "Discrete Math & Its Appl (Loose-Leaf)",
+      "author": "Rosen",
+      "edition": 8,
+      "copyrightYear": null,
+      "priceNewUSD": 116.75,
+      "priceUsedUSD": 87.75
     },
     "links": null
   }

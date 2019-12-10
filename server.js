@@ -68,7 +68,8 @@ app.get('/create-post/:isbn', (req, res) => {
       courseName: courseName,
       isbn: isbn,
       title: tempReqData[reqIdx].attributes.title,
-      author: tempReqData[reqIdx].attributes.author
+	  author: tempReqData[reqIdx].attributes.author,
+	  imgURL: tempReqData[reqIdx].attributes.coverImageUrl
     });
 });
 
