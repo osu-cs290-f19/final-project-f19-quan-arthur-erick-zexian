@@ -1,0 +1,10 @@
+#no-post-container #sell-button {
+  width: 200px;
+  margin: auto;
+}
+
+#no-post-container .sell-btn {
+  width: 200px;
+  /* margin: auto; */
+  background-color: #1caa46;
+}

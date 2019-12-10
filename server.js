@@ -73,11 +73,11 @@ app.get('/details/:isbn/', (req, res) => {
 			title: matchedPosts[0].title,
 			author: matchedPosts[0].author,
 			img: matchedPosts[0].imgURL,
-      isbn: matchedPosts[0].isbn
+      isbn: isbn
 		});
 	} else {
-		res.status(404).send('Post Not Found');
-	}
+		res.status(404);
+    res.render('no-post', {isbn: isbn});	}
 });
 
 app.get('/create-post/:isbn', (req, res) => {

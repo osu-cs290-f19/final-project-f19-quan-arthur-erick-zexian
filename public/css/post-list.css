@@ -21,11 +21,11 @@
 
 /* Sell Button */
 
-#sell-button {
+.post-list-container #sell-button {
   position: relative;
 }
 
-#sell-button .sell-btn {
+.post-list-container #sell-button .sell-btn {
   width: 200px;
   background-color: #1caa46;
   position: absolute;
