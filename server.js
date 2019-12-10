@@ -153,9 +153,9 @@ app.get('/details/:isbn/:postID', (req, res, next) => {
 
 	//console.log(index, filteredPost);
 	if (index != -1) {
-		//return page
+		console.log('link:', data[index].imgURL);
 		res.status(200).render('./partials/bookDescription', {
-			imgSource: data[index].imageURL,
+			imgSource: data[index].imgURL,
 			bookTitle: data[index].title,
 			ISBN: data[index].isbn,
 			bookEdition: 'Test',
