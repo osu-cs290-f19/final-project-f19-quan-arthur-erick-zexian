@@ -4,6 +4,7 @@
 @import 'page7.css';
 @import '404.css';
 @import 'post-list.css';
+@import 'no-post.css';
 * {
   margin: 0;
   padding: 0;
