@@ -16,8 +16,7 @@ const app = express();
 let results;
 let textbookData = [];
 
-var courseName = "";
-
+var courseName = '';
 
 app.engine(
 	'handlebars',
@@ -41,34 +40,34 @@ app.get('/home', (req, res) => {
 	});
 });
 
-
 /* This is specifically for our requested textbook data */
-function getReqDatIdx(req){
-  for(var i = 0; i < tempReqData.length; i++){
-    if(req == tempReqData[i].id){
-      return i;  
-    }
-  }
-  return -1; /* We shouldn't ever get here */
+function getReqDatIdx(req) {
+	for (var i = 0; i < tempReqData.length; i++) {
+		if (req == tempReqData[i].id) {
+			return i;
+		}
+	}
+	return -1; /* We shouldn't ever get here */
 }
 
 app.get('/post-created', (req, res) => {
-  res.status(200);
-  res.render('post-created');
-})
+	res.status(200);
+	res.render('post-created');
+});
 
 app.get('/create-post/:isbn', (req, res) => {
-  
-  tempReqData =JSON.parse(fs.readFileSync('./data/textbookData.json'));
-  var reqIdx = getReqDatIdx(req.params.isbn);
+	tempReqData = JSON.parse(fs.readFileSync('./data/textbookData.json'));
+	var reqIdx = getReqDatIdx(req.params.isbn);
 	const isbn = req.params.isbn;
+
 
   res.status(200).render('create_post', 
     {
       courseName: courseName,
       isbn: isbn,
       title: tempReqData[reqIdx].attributes.title,
-      author: tempReqData[reqIdx].attributes.author
+	  author: tempReqData[reqIdx].attributes.author,
+	  imgURL: tempReqData[reqIdx].attributes.coverImageUrl
     });
 });
 
@@ -86,7 +85,7 @@ function getCount(req) {
 
 app.post('/createPost', (req, res) => {
 	req.body.count = getCount(req.body.isbn);
-  console.log(req.body);
+	console.log(req.body);
 	existingData.push(req.body);
 	fs.writeFile('./data/postData.json', JSON.stringify(existingData, null, 2), (err) => {
 		if (err) {
@@ -100,30 +99,25 @@ app.post('/createPost', (req, res) => {
 });
 
 app.get('/search/:course/:courseName', async (req, res) => {
-  const course = req.params.course;
-  courseName = req.params.courseName;
+	const course = req.params.course;
+	courseName = req.params.courseName;
 	const inputIndex = course.match(/[0-9]/).index;
 	const major = course.substring(0, inputIndex).trim();
 	const courseNumber = course.substr(inputIndex, 3);
 
 	results = await getTextbook(major, courseNumber);
 
-  fs.writeFile(
-    './data/textbookData.json',
-    JSON.stringify(results, null, 2),
-    err => {
-      if (err) {
-        console.log(err);
-        return;
-      } 
-      else {
-        console.log("== postData.json has been written to.");
-      }
-    }
-  );
+	fs.writeFile('./data/textbookData.json', JSON.stringify(results, null, 2), (err) => {
+		if (err) {
+			console.log(err);
+			return;
+		} else {
+			console.log('== postData.json has been written to.');
+		}
+	});
 
 	res.status(200);
-	res.render('home', {
+	res.render('book-search', {
 		results: results
 	});
 });

@@ -49,5 +49,18 @@
     "email": "averageStudent@aol.com",
     "phone": "1234567789",
     "count": 0
+  },
+  {
+    "title": "Discrete Mathematics W/Appl Loose-Leaf W/Webassign Access Code Pkg",
+    "author": "Epp (2)",
+    "isbn": "9780357097724",
+    "conditon": "New",
+    "price": "1000",
+    "meetupInfo": "Austin Hall 2-3am",
+    "description": "Better than new",
+    "email": "lorem@ipsum.est",
+    "phone": "3051234567",
+    "imgURL": "http://coverimages.verbacompete.com/no_image.jpg",
+    "count": 2
   }
 ]
