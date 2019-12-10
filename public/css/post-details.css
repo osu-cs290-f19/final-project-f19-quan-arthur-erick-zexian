@@ -1,0 +1,41 @@
+.post-details-content {
+  display: flex;
+  padding: 2rem 3rem;
+  margin-left: 10rem;
+  /* margin-right: 5rem; */
+}
+
+/* Left Container */
+
+.left-side-container {
+  margin-right: 5rem;
+}
+
+.image-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Right Container */
+
+.right-side-container {
+  width: 500px;
+}
+
+.post-field {
+  margin-bottom: 1rem;
+}
+
+.post-details-content .post-label {
+  /* font-size: 1.4rem; */
+  font-weight: 600;
+}
+
+.book-description-box {
+  height: 100px;
+  margin: .5rem 0;
+  border: 1px solid #aaa;
+  padding: .5rem;
+}

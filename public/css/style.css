@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Roboto:400,500,500i,700,700i&display=swap');
 @import 'search-results.css';
 @import 'create-post.css';
-@import 'page7.css';
+/* @import 'page7.css'; */
+
+@import 'post-details.css';
 @import '404.css';
 @import 'post-list.css';
 * {
