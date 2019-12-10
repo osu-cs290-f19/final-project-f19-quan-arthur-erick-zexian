@@ -18,7 +18,7 @@
     "prestart": "npm run build",
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "handlebars views/home.handlebars views/partials/post.handlebars views/create_post.handlebars views/sell.handlebars -f public/js/home.js"
+    "build": "handlebars views/book-search.handlebars views/partials/book-result.handlebars views/create_post.handlebars views/sell.handlebars -f public/js/home.js"
   },
   "author": "Quan Nguyen",
   "license": "MIT"

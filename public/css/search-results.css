@@ -33,24 +33,8 @@ h3 {
   max-height: 100%;
 }
 
-#sell-btn {
+#sell-button .sell-btn {
   margin-right: 100px;
   margin-top: 30px;
   width: 200px;
-}
-
-/* Utility classes */
-
-.primary-color {
-  background-color: #2699FB;
-  color: #fff;
-}
-
-.btn {
-  padding: .6rem 2rem;
-  border: 0px solid #fff;
-  border-radius: 10px;
-  cursor: pointer;
-  width: 150px;
-  text-align: center;
 }
