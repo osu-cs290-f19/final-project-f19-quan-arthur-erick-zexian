@@ -42,7 +42,7 @@ templates['post-list'] = template({"1":function(container,depth0,helpers,partial
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":8,"column":37},"end":{"line":8,"column":46}}}) : helper)))
     + "</div>\r\n        <div class=\"author-container\">"
     + alias4(((helper = (helper = helpers.author || (depth0 != null ? depth0.author : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"author","hash":{},"data":data,"loc":{"start":{"line":9,"column":38},"end":{"line":9,"column":48}}}) : helper)))
-    + "</div>\r\n      </div>\r\n    </div>\r\n    <div id=\"sell-button\">\r\n      <input type=\"button\" value=\"Sell This Book\" class=\"btn primary-color sell-btn\">\r\n    </div>\r\n  </div>\r\n\r\n\r\n  <section id=\" posts\">\r\n"
+    + "</div>\r\n      </div>\r\n    </div>\r\n    <div id=\"sell-button\">\r\n      <button type=\"button\" value=\"Sell This Book\" class=\"btn primary-color sell-btn\">\r\n    </div>\r\n  </div>\r\n\r\n\r\n  <section id=\" posts\">\r\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.postList : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":19,"column":4},"end":{"line":21,"column":13}}})) != null ? stack1 : "")
     + "  </section>\r\n</main>";
 },"usePartial":true,"useData":true});
@@ -55,10 +55,10 @@ templates['user-post'] = template({"compiler":[8,">= 4.3.0"],"main":function(con
     + alias4(((helper = (helper = helpers.condition || (depth0 != null ? depth0.condition : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"condition","hash":{},"data":data,"loc":{"start":{"line":1,"column":67},"end":{"line":1,"column":80}}}) : helper)))
     + "\">\r\n  <div class=\"post-content\">\r\n    <div class=\"book-image-container\">\r\n      <img src=\""
     + alias4(((helper = (helper = helpers.imgURL || (depth0 != null ? depth0.imgURL : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"imgURL","hash":{},"data":data,"loc":{"start":{"line":4,"column":16},"end":{"line":4,"column":26}}}) : helper)))
-    + "\">\r\n    </div>\r\n    <div class=\"book-info-container\">\r\n      <div class=\"book-price\"><a href=\"#\">Price: $"
-    + alias4(((helper = (helper = helpers.price || (depth0 != null ? depth0.price : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"price","hash":{},"data":data,"loc":{"start":{"line":7,"column":50},"end":{"line":7,"column":59}}}) : helper)))
-    + "</a></div>\r\n      <div class=\"book-condition\">Condition: "
-    + alias4(((helper = (helper = helpers.condition || (depth0 != null ? depth0.condition : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"condition","hash":{},"data":data,"loc":{"start":{"line":8,"column":45},"end":{"line":8,"column":58}}}) : helper)))
+    + "\">\r\n    </div>\r\n    <div class=\"book-info-container\">\r\n      <div class=\"book-price\">\r\n        <a href=\"\">\r\n          <p class=\"price\">Price: $"
+    + alias4(((helper = (helper = helpers.price || (depth0 != null ? depth0.price : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"price","hash":{},"data":data,"loc":{"start":{"line":9,"column":35},"end":{"line":9,"column":44}}}) : helper)))
+    + "</p>\r\n        </a>\r\n      </div>\r\n      <div class=\"book-condition\">Condition: "
+    + alias4(((helper = (helper = helpers.condition || (depth0 != null ? depth0.condition : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"condition","hash":{},"data":data,"loc":{"start":{"line":12,"column":45},"end":{"line":12,"column":58}}}) : helper)))
     + "</div>\r\n    </div>\r\n  </div>\r\n</div>";
 },"useData":true});
 templates['book-search'] = template({"1":function(container,depth0,helpers,partials,data) {
