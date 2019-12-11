@@ -29,6 +29,7 @@ app.set('view engine', 'handlebars');
 
 app.use(bodyParser.json());
 
+app.use(express.static('public/html'));
 app.use(express.static('public'));
 
 app.get('/home', (req, res) => {
