@@ -1,29 +1,29 @@
 [
   {
-    "id": "9780128043998",
+    "id": "9780357097724",
     "type": "textbook",
     "attributes": {
       "coverImageUrl": "http://coverimages.verbacompete.com/no_image.jpg",
-      "title": "Relational Database Design & Implementation",
-      "author": "Harrington",
-      "edition": 4,
+      "title": "Discrete Mathematics W/Appl Loose-Leaf W/Webassign Access Code Pkg",
+      "author": "Epp (2)",
+      "edition": 5,
       "copyrightYear": null,
-      "priceNewUSD": 54.5,
-      "priceUsedUSD": 41
+      "priceNewUSD": 131,
+      "priceUsedUSD": null
     },
     "links": null
   },
   {
-    "id": "9781943872367",
+    "id": "9781259731280",
     "type": "textbook",
     "attributes": {
       "coverImageUrl": "http://coverimages.verbacompete.com/no_image.jpg",
-      "title": "Murach's Mysql",
-      "author": "Murach",
-      "edition": 3,
+      "title": "Discrete Math & Its Appl (Loose-Leaf)",
+      "author": "Rosen",
+      "edition": 8,
       "copyrightYear": null,
-      "priceNewUSD": 51.5,
-      "priceUsedUSD": 38.75
+      "priceNewUSD": 116.75,
+      "priceUsedUSD": 87.75
     },
     "links": null
   }

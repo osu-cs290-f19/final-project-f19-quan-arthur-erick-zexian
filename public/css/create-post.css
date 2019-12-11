@@ -62,11 +62,14 @@ input, select, textarea, button {
   /* border: 1px solid #2699fb; */
 }
 
+/* Dropdown condition */
+
 .create-post-container:nth-child(4) select {
   width: 100%;
   height: 100%;
   border: 1px solid #2699fb;
   padding-left: 25px;
+  background-color: #fff;
 }
 
 /* Price */
@@ -120,5 +123,10 @@ input, select, textarea, button {
 }
 
 #create-back {
+  background-color: #f3444a;
+  color: #fff;
+}
+
+#create-back:hover {
   background-color: #ee6e73;
 }
