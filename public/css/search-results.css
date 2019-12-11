@@ -8,16 +8,16 @@ h3 {
   text-align: center;
 }
 
-.results {
+#search-results {
   max-width: 1200px;
   margin: auto;
 }
 
-.post {
+#search-results .post {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ccc;
-  height: 180px;
+  border-bottom: 1px solid #bbb;
+  /* height: 180px; */
 }
 
 .post-info {
@@ -25,14 +25,16 @@ h3 {
   display: flex;
 }
 
-.book-cover {
+/* #search-results .book-cover {
+  width: 200px;
   height: 200px;
-  margin-right: 2rem;
-}
+} */
 
-.book-cover img {
-  max-width: 100%;
-  max-height: 100%;
+#search-results .book-cover img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 2rem;
 }
 
 .book-info p {
