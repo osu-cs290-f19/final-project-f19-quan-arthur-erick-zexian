@@ -1,5 +1,8 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['no-textbook'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<h2 style=\"text-align: center;, margin-top: 3rem;\">Congratulations! You'll save yourself $100</h2>\r\n<h3 style=\"text-align: center;\">Because this course doesn't require textbooks</h3>";
+},"useData":true});
 templates['post-details'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
 
@@ -44,7 +47,7 @@ templates['post-list'] = template({"1":function(container,depth0,helpers,partial
     + alias4(((helper = (helper = helpers.author || (depth0 != null ? depth0.author : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"author","hash":{},"data":data,"loc":{"start":{"line":9,"column":38},"end":{"line":9,"column":48}}}) : helper)))
     + "</div>\r\n      </div>\r\n    </div>\r\n    <div id=\"sell-button\">\r\n      <button type=\"button\" class=\"btn primary-color sell-btn\">Sell This Book</button>\r\n    </div>\r\n  </div>\r\n\r\n\r\n  <section id=\" posts\">\r\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.postList : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":19,"column":4},"end":{"line":21,"column":13}}})) != null ? stack1 : "")
-    + "  </section>\r\n</main>";
+    + "  </section>\r\n</main>\r\n";
 },"usePartial":true,"useData":true});
 templates['user-post'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
