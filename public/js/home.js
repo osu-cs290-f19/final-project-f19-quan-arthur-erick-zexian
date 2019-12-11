@@ -1,7 +1,7 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['no-textbook'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<h2 style=\"text-align: center;, margin-top: 3rem;\">Congratulations! You'll save yourself $100</h2>\r\n<h3 style=\"text-align: center;\">Because this course doesn't require textbooks</h3>";
+    return "<h2 style=\"text-align: center; margin-top: 4rem;\">Congratulations! You're gonna save yourself $100</h2>\r\n<h3 style=\"text-align: center;\">Because this course doesn't require textbooks</h3>";
 },"useData":true});
 templates['post-details'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;

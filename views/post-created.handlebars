@@ -1,8 +1,11 @@
-<h3>Your new post was successfully created</h3>
-<p style="text-align: center;">You'll be redirected in 3 seconds</p>
+<div id="post-created-container" data-isbn={{isbn}}>
+  <h3>Your new post was successfully created</h3>
+  <p style="text-align: center;">You'll be redirected in 3 seconds</p>
 
-<script>
-  setTimeout(() => {
-    window.location = '/index.html';
-  }, 3000)
-</script>
+  <script>
+    setTimeout(() => {
+      const isbn=document.getElementById('post-created-container').dataset.isbn;
+      window.location='/details/'+isbn;
+    },3000)
+  </script>
+</div>
