@@ -70,6 +70,7 @@ createButton.addEventListener('click', () => {
 		alert('Please provide input for all fields');
 	} else {
 		storeInput();
-		window.location = '/post-created';
+    postInfo = document.getElementsByClassName(IPT_CLASS);
+		window.location = '/post-created/' + postInfo[2].innerText;
 	}
 });

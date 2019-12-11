@@ -51,9 +51,12 @@ function getReqDatIdx(req) {
 	return -1; /* We shouldn't ever get here */
 }
 
-app.get('/post-created', (req, res) => {
+app.get('/post-created/:isbn', (req, res) => {
+  const isbn = req.params.isbn;
 	res.status(200);
-	res.render('post-created');
+	res.render('post-created', {
+    isbn: isbn
+  });
 });
 
 app.get('/details/:isbn/', (req, res) => {

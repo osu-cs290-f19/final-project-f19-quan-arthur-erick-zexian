@@ -101,5 +101,44 @@
     "phone": "7775552222",
     "imgURL": "http://coverimages.verbacompete.com/no_image.jpg",
     "count": 3
+  },
+  {
+    "title": "Relational Database Design & Implementation",
+    "author": "Harrington",
+    "isbn": "9780128043998",
+    "condition": "New",
+    "price": "125",
+    "meetupInfo": "Dutch Bros anytime",
+    "description": "brand fricking new",
+    "email": "email@gmail.com",
+    "phone": "8778886666",
+    "imgURL": "http://coverimages.verbacompete.com/no_image.jpg",
+    "count": 0
+  },
+  {
+    "title": "Relational Database Design & Implementation",
+    "author": "Harrington",
+    "isbn": "9780128043998",
+    "condition": "Excellent",
+    "price": "20",
+    "meetupInfo": "anywhere",
+    "description": "Used once",
+    "email": "noemail",
+    "phone": "7778885555",
+    "imgURL": "http://coverimages.verbacompete.com/no_image.jpg",
+    "count": 1
+  },
+  {
+    "title": "Relational Database Design & Implementation",
+    "author": "Harrington",
+    "isbn": "9780128043998",
+    "condition": "Poor",
+    "price": "0",
+    "meetupInfo": "anytime",
+    "description": "FREE. Just take it please",
+    "email": "no email",
+    "phone": "1110002222",
+    "imgURL": "http://coverimages.verbacompete.com/no_image.jpg",
+    "count": 2
   }
 ]
