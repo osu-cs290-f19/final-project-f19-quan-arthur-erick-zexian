@@ -17,6 +17,19 @@ body {
   color: #555;
 }
 
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #333;
+}
+
+a:hover {
+  color: #3585fd;
+}
+
 /* Nav bar */
 
 nav .nav-container {
@@ -25,6 +38,10 @@ nav .nav-container {
 
 nav a {
   text-decoration: none;
+  color: #fff;
+}
+
+nav a:visited {
   color: #fff;
 }
 
