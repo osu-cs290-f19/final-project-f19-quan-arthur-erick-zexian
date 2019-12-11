@@ -53,11 +53,15 @@ templates['user-post'] = template({"compiler":[8,">= 4.3.0"],"main":function(con
     + alias4(((helper = (helper = helpers.price || (depth0 != null ? depth0.price : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"price","hash":{},"data":data,"loc":{"start":{"line":1,"column":40},"end":{"line":1,"column":49}}}) : helper)))
     + "\" data-condition=\""
     + alias4(((helper = (helper = helpers.condition || (depth0 != null ? depth0.condition : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"condition","hash":{},"data":data,"loc":{"start":{"line":1,"column":67},"end":{"line":1,"column":80}}}) : helper)))
-    + "\">\r\n  <div class=\"post-content\">\r\n    <div class=\"book-image-container\">\r\n      <img src=\""
+    + "\" data-postID=\""
+    + alias4(((helper = (helper = helpers.count || (depth0 != null ? depth0.count : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"count","hash":{},"data":data,"loc":{"start":{"line":1,"column":95},"end":{"line":1,"column":104}}}) : helper)))
+    + "\">\r\n  <div class=\" post-content\">\r\n    <div class=\"book-image-container\">\r\n      <img src=\""
     + alias4(((helper = (helper = helpers.imgURL || (depth0 != null ? depth0.imgURL : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"imgURL","hash":{},"data":data,"loc":{"start":{"line":4,"column":16},"end":{"line":4,"column":26}}}) : helper)))
+
     + "\">\r\n    </div>\r\n    <div class=\"book-info-container\">\r\n      <div class=\"book-price\">\r\n        <a href=\"\">\r\n          <p class=\"price\">Price: $"
     + alias4(((helper = (helper = helpers.price || (depth0 != null ? depth0.price : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"price","hash":{},"data":data,"loc":{"start":{"line":9,"column":35},"end":{"line":9,"column":44}}}) : helper)))
     + "</p>\r\n        </a>\r\n      </div>\r\n      <div class=\"book-condition\">Condition: "
+
     + alias4(((helper = (helper = helpers.condition || (depth0 != null ? depth0.condition : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"condition","hash":{},"data":data,"loc":{"start":{"line":12,"column":45},"end":{"line":12,"column":58}}}) : helper)))
     + "</div>\r\n    </div>\r\n  </div>\r\n</div>";
 },"useData":true});
