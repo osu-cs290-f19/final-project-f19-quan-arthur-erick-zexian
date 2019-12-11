@@ -11,8 +11,10 @@ for (i = 0; i < title.length; i++) {
   let count = bookCount[i].dataset.count;
   if (count === '0') {
     bookCount[i].classList.add('red');
+    bookCount[i].innerHTML = 'No Books Available'
   } else if(count === '1') {
     bookCount[i].classList.add('yellow');
+    bookCount[i].innerHTML = 'Last One Available'
   } else {
     bookCount[i].classList.add('green');
   }
