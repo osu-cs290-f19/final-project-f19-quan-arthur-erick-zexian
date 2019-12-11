@@ -126,6 +126,11 @@ app.get('/search/:course/:courseName', async (req, res) => {
 	const courseNumber = course.substr(inputIndex, 3);
 
 	results = await getTextbook(major, courseNumber);
+  if (results.length == 0) {
+    res.status(200);
+    res.render('no-textbook');
+    return;
+  }
 
 	fs.writeFile('./data/textbookData.json', JSON.stringify(results, null, 2), (err) => {
 		if (err) {
