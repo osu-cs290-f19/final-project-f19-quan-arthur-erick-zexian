@@ -75,5 +75,18 @@
     "phone": "erfsef",
     "imgURL": "http://placekitten.com/300/402",
     "count": 0
+  },
+  {
+    "title": "C Programming Language",
+    "author": "Kernighan",
+    "isbn": "9780131103627",
+    "condition": "Excellent",
+    "price": "85",
+    "meetupInfo": "MWF KEC Afternoon",
+    "description": "Rarely used (I failed this class)",
+    "email": "DoNotEmailMe@gmail.com",
+    "phone": "7778889999",
+    "imgURL": "http://coverimages.verbacompete.com/5755a5f7-3ccc-5e1f-91b6-c570aec6cecf.jpg",
+    "count": 0
   }
 ]

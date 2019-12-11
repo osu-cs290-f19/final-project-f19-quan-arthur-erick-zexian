@@ -73,6 +73,8 @@
 
 .post-content .book-price {
   margin: 20px 0;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .post-container {
