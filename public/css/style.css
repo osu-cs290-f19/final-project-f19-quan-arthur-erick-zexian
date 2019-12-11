@@ -5,6 +5,8 @@
 @import '404.css';
 @import 'post-list.css';
 @import 'no-post.css';
+/* Global properties */
+
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +28,10 @@ a:visited {
 
 a:hover {
   color: #3585fd;
+}
+
+img {
+  border: 1px solid #888;
 }
 
 /* Nav bar */
@@ -159,4 +165,3 @@ nav .nav-elements ul {
 .sell-btn:hover {
   background-color: #268d45
 }
-
