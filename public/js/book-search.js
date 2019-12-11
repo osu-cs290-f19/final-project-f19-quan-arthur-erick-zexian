@@ -1,11 +1,5 @@
 const title = document.getElementsByClassName('title');
-
-// for (i = 0; i < sellBtn.length; i++) {
-// 	sellBtn[i].addEventListener('click', (event) => {
-// 		const isbn = event.target.parentNode.parentNode.dataset.isbn;
-// 		window.location = '/create-post/' + isbn + '/';
-// 	});
-// }
+const bookCount = document.getElementsByClassName('book-count');
 
 for (i = 0; i < title.length; i++) {
 	title[i].addEventListener('click', (event) => {
@@ -13,4 +7,18 @@ for (i = 0; i < title.length; i++) {
 		const isbn = event.target.parentNode.parentNode.parentNode.parentNode.dataset.isbn;
 		window.location = '/details/' + isbn + '/';
 	});
+  // Adding book counts
+  let count = bookCount[i].dataset.count;
+  if (count === '0') {
+    bookCount[i].classList.add('red');
+  } else if(count === '1') {
+    bookCount[i].classList.add('yellow');
+  } else {
+    bookCount[i].classList.add('green');
+  }
 }
+
+
+
+
+

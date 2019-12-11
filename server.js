@@ -33,7 +33,6 @@ app.use(express.static('public/html'));
 app.use(express.static('public'));
 
 app.get('/home', (req, res) => {
-	console.log('serving index.html');
 	fs.readFile(path.join(__dirname + '/data/courseData.json'), 'utf-8', (err, data) => {
 		if (err) console.log(err);
 		else {
@@ -124,7 +123,6 @@ app.get('/search/:course/:courseName', async (req, res) => {
 	});
 
   results = getBookCounts(postData, results);
-  console.log(results);
   
 	res.status(200);
 	res.render('book-search', {
@@ -154,7 +152,6 @@ app.get('/details/:isbn/:postID', (req, res, next) => {
 
 	//console.log(index, filteredPost);
 	if (index != -1) {
-		console.log('link:', data[index].imgURL);
 		res.status(200).render('post-details', {
 			imgSource: data[index].imgURL,
 			bookTitle: data[index].title,
@@ -217,7 +214,6 @@ function getReqDatIdx(req) {
 
 
 function getTextbook(subject, courseNumber) {
-	console.log('fetching textbooks');
 	params.append('client_id', getTextbookPublicKey);
 	params.append('client_secret', getTextbookSecretKey);
 	params.append('grant_type', grantType);

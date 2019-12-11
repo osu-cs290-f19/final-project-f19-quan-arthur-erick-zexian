@@ -166,5 +166,44 @@
     "phone": "1112223333",
     "imgURL": "http://coverimages.verbacompete.com/no_image.jpg",
     "count": 4
+  },
+  {
+    "title": "Krik? Krak!",
+    "author": "Danticat",
+    "isbn": "9781616957001",
+    "condition": "New",
+    "price": "99",
+    "meetupInfo": "Any where",
+    "description": "Brand Spanking New",
+    "email": "student1@gmail.com",
+    "phone": "1111111111",
+    "imgURL": "http://coverimages.verbacompete.com/no_image.jpg",
+    "count": 0
+  },
+  {
+    "title": "Krik? Krak!",
+    "author": "Danticat",
+    "isbn": "9781616957001",
+    "condition": "Excellent",
+    "price": "89",
+    "meetupInfo": "KEC anytime",
+    "description": "Used once",
+    "email": "student2@gmail.com",
+    "phone": "2222222222",
+    "imgURL": "http://coverimages.verbacompete.com/no_image.jpg",
+    "count": 1
+  },
+  {
+    "title": "Never Let Me Go",
+    "author": "Ishiguro",
+    "isbn": "9781400078776",
+    "condition": "Good",
+    "price": "75",
+    "meetupInfo": "Library",
+    "description": "okay condition",
+    "email": "student3@gmail.com",
+    "phone": "3333333333",
+    "imgURL": "http://coverimages.verbacompete.com/fd4fde49-4f47-5e86-9716-8d09d7c11cca.jpg",
+    "count": 0
   }
 ]
