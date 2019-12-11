@@ -16,7 +16,7 @@ const app = express();
 let results;
 let textbookData = [];
 
-var existingData = JSON.parse(fs.readFileSync('./data/postData.json'));
+var postData = JSON.parse(fs.readFileSync('./data/postData.json'));
 var courseName = '';
 
 app.engine(
@@ -33,7 +33,6 @@ app.use(express.static('public/html'));
 app.use(express.static('public'));
 
 app.get('/home', (req, res) => {
-	console.log('serving index.html');
 	fs.readFile(path.join(__dirname + '/data/courseData.json'), 'utf-8', (err, data) => {
 		if (err) console.log(err);
 		else {
@@ -42,15 +41,6 @@ app.get('/home', (req, res) => {
 	});
 });
 
-/* This is specifically for our requested textbook data */
-function getReqDatIdx(req) {
-	for (var i = 0; i < tempReqData.length; i++) {
-		if (req == tempReqData[i].id) {
-			return i;
-		}
-	}
-	return -1; /* We shouldn't ever get here */
-}
 
 app.get('/post-created/:isbn', (req, res) => {
   const isbn = req.params.isbn;
@@ -63,7 +53,7 @@ app.get('/post-created/:isbn', (req, res) => {
 app.get('/details/:isbn/', (req, res) => {
 	//   console.log("========");
 	var matchedPosts = [];
-	var tempReqData = existingData;
+	var tempReqData = postData;
 	// console.log(tempReqData);
 	const isbn = req.params.isbn;
 	for (i = 0; i < tempReqData.length; i++) {
@@ -98,26 +88,15 @@ app.get('/create-post/:isbn', (req, res) => {
 	});
 });
 
-function getCount(req) {
-	var counter = 0;
-	for (var i = 0; i < existingData.length; i++) {
-		if (existingData[i].isbn == req) {
-			counter++;
-		}
-	}
-	return counter;
-}
 
 app.post('/createPost', (req, res) => {
 	req.body.count = getCount(req.body.isbn);
-	existingData.push(req.body);
-	fs.writeFile('./data/postData.json', JSON.stringify(existingData, null, 2), (err) => {
+	postData.push(req.body);
+	fs.writeFile('./data/postData.json', JSON.stringify(postData, null, 2), (err) => {
 		if (err) {
 			console.log(err);
 			return;
-		} else {
-			console.log('== postData.json has been written to.');
-		}
+		} 
 	});
 	res.status(200).send();
 });
@@ -140,14 +119,15 @@ app.get('/search/:course/:courseName', async (req, res) => {
 		if (err) {
 			console.log(err);
 			return;
-		} else {
-			console.log('== postData.json has been written to.');
-		}
+		} 
 	});
 
+  results = getBookCounts(postData, results);
+  
 	res.status(200);
 	res.render('book-search', {
-		results: results
+		results: results,
+    
 	});
 });
 
@@ -172,7 +152,6 @@ app.get('/details/:isbn/:postID', (req, res, next) => {
 
 	//console.log(index, filteredPost);
 	if (index != -1) {
-		console.log('link:', data[index].imgURL);
 		res.status(200).render('post-details', {
 			imgSource: data[index].imgURL,
 			bookTitle: data[index].title,
@@ -196,9 +175,45 @@ app.get('*', function(req, res) {
 
 app.listen(3000, () => console.log('server is running on port 3000..'));
 
-// Get access token
+
+// Utility Functions
+
+function getBookCounts(postData, results) {
+  const tempPostData = postData;
+  let tempResults = results;
+  for (i = 0; i < tempResults.length; i++) {
+    results[i].bookCount = 0;
+    for (j = 0; j < tempPostData.length; j++) {
+      if (tempResults[i].id === tempPostData[j].isbn) {
+        results[i].bookCount++;
+      }
+    }   
+  }
+  return results
+}
+
+function getCount(req) {
+	var counter = 0;
+	for (var i = 0; i < postData.length; i++) {
+		if (postData[i].isbn == req) {
+			counter++;
+		}
+	}
+	return counter;
+}
+
+/* This is specifically for our requested textbook data */
+function getReqDatIdx(req) {
+	for (var i = 0; i < tempReqData.length; i++) {
+		if (req == tempReqData[i].id) {
+			return i;
+		}
+	}
+	return -1; /* We shouldn't ever get here */
+}
+
+
 function getTextbook(subject, courseNumber) {
-	console.log('fetching textbooks');
 	params.append('client_id', getTextbookPublicKey);
 	params.append('client_secret', getTextbookSecretKey);
 	params.append('grant_type', grantType);

@@ -17,7 +17,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #bbb;
-  /* height: 180px; */
+  position: relative;
 }
 
 .post-info {
@@ -48,4 +48,30 @@ h3 {
 
 .book-info .title {
   font-size: 1.3rem
+}
+
+/* Book count box */
+
+#search-results .book-count {
+  padding: .7rem 1rem;
+  border-radius: 10px;
+  height: 25px;
+  position: relative;
+  top: 140px;
+  right: 50px;
+}
+
+.yellow {
+  border: 1px solid #ebb820;
+  color: #ebb820;
+}
+
+.red {
+  border: 1px solid #F44336;
+  color: #F44336;
+}
+
+.green {
+  border: 1px solid #1CAA46;
+  color: #1CAA46;
 }
