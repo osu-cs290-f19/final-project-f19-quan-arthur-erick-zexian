@@ -79,14 +79,14 @@ templates['book-result'] = template({"compiler":[8,">= 4.3.0"],"main":function(c
     + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data,"loc":{"start":{"line":1,"column":28},"end":{"line":1,"column":34}}}) : helper)))
     + ">\r\n  <div class=\"post-info\">\r\n    <div class=\"book-cover\">\r\n      <img src="
     + alias4(alias5(((stack1 = (depth0 != null ? depth0.attributes : depth0)) != null ? stack1.coverImageUrl : stack1), depth0))
-    + " alt=\"\">\r\n    </div>\r\n    <div class=\"book-info\">\r\n      <a href=\"#\">\r\n        <p class=\"title\">Title: "
+    + " alt=\"\">\r\n    </div>\r\n    <div class=\"book-info\">\r\n      <a href=\"#\">\r\n        <p class=\"title\"><span class=\"book-label\">Title: </span>"
     + alias4(alias5(((stack1 = (depth0 != null ? depth0.attributes : depth0)) != null ? stack1.title : stack1), depth0))
-    + "</p>\r\n      </a>\r\n      <p>Edition: "
+    + "</p>\r\n      </a>\r\n      <p><span class=\"book-label\">Edition: </span>"
     + alias4(alias5(((stack1 = (depth0 != null ? depth0.attributes : depth0)) != null ? stack1.edition : stack1), depth0))
-    + "</p>\r\n      <p>Author: "
+    + "</p>\r\n      <p><span class=\"book-label\">Author: </span>"
     + alias4(alias5(((stack1 = (depth0 != null ? depth0.attributes : depth0)) != null ? stack1.author : stack1), depth0))
-    + "</p>\r\n      <p>ISBN: "
-    + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data,"loc":{"start":{"line":12,"column":15},"end":{"line":12,"column":21}}}) : helper)))
+    + "</p>\r\n      <p><span class=\"book-label\">Edition: </span>"
+    + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data,"loc":{"start":{"line":12,"column":50},"end":{"line":12,"column":56}}}) : helper)))
     + "</p>\r\n    </div>\r\n  </div>\r\n\r\n</div>";
 },"useData":true});
 templates['create_post'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
