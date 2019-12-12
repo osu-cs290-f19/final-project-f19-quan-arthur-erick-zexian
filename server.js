@@ -122,6 +122,7 @@ app.get('/search/:course/:courseName', async (req, res) => {
 		} 
 	});
 
+
   results = getBookCounts(postData, results);
   
 	res.status(200);
@@ -150,7 +151,6 @@ app.get('/details/:isbn/:postID', (req, res, next) => {
 		}
 	});
 
-	//console.log(index, filteredPost);
 	if (index != -1) {
 		res.status(200).render('post-details', {
 			imgSource: data[index].imgURL,
@@ -214,6 +214,7 @@ function getReqDatIdx(req) {
 
 
 function getTextbook(subject, courseNumber) {
+	console.log('fetching data');
 	params.append('client_id', getTextbookPublicKey);
 	params.append('client_secret', getTextbookSecretKey);
 	params.append('grant_type', grantType);
