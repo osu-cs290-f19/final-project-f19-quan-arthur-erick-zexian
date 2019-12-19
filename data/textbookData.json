@@ -1,43 +1,29 @@
 [
   {
-    "id": "BS19707174",
+    "id": "9780357097724",
     "type": "textbook",
     "attributes": {
       "coverImageUrl": "http://coverimages.verbacompete.com/no_image.jpg",
-      "title": "See Instructor For Course Materials - No Cost",
-      "author": "Staff",
-      "edition": null,
+      "title": "Discrete Mathematics W/Appl Loose-Leaf W/Webassign Access Code Pkg",
+      "author": "Epp (2)",
+      "edition": 5,
       "copyrightYear": null,
-      "priceNewUSD": 0,
+      "priceNewUSD": 131,
       "priceUsedUSD": null
     },
     "links": null
   },
   {
-    "id": "9780132350884",
+    "id": "9781259731280",
     "type": "textbook",
     "attributes": {
       "coverImageUrl": "http://coverimages.verbacompete.com/no_image.jpg",
-      "title": "Clean Code",
-      "author": "Martin",
-      "edition": null,
+      "title": "Discrete Math & Its Appl (Loose-Leaf)",
+      "author": "Rosen",
+      "edition": 8,
       "copyrightYear": null,
-      "priceNewUSD": 38.25,
-      "priceUsedUSD": 33.5
-    },
-    "links": null
-  },
-  {
-    "id": "9780134456478",
-    "type": "textbook",
-    "attributes": {
-      "coverImageUrl": "http://coverimages.verbacompete.com/no_image.jpg",
-      "title": "Practical Object-Oriented Design In Ruby",
-      "author": "Metz",
-      "edition": 2,
-      "copyrightYear": null,
-      "priceNewUSD": 38.25,
-      "priceUsedUSD": 30
+      "priceNewUSD": 116.75,
+      "priceUsedUSD": 87.75
     },
     "links": null
   }
